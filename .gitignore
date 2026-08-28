@@ -1,0 +1,27 @@
+# --- secrets ---
+.env
+*.key
+
+# --- python ---
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# --- node/web ---
+node_modules/
+web/dist/
+
+# --- data (regenerable; keep dir structure via .gitkeep) ---
+data/**
+!data/**/
+!data/**/.gitkeep
+
+# --- misc ---
+.DS_Store
+*.log
+.claude/
+data/memory/
+web/node_modules/
