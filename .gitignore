@@ -22,11 +22,12 @@ data/**
 !data/synthetic/*.json
 !data/synthetic/reconriver/
 !data/synthetic/reconriver/**
+!data/memory/
+!data/memory/memory.db
 
 
 # --- misc ---
 .DS_Store
 *.log
 .claude/
-data/memory/
 web/node_modules/
