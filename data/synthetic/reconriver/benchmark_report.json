@@ -1,0 +1,33 @@
+{
+  "adapter_report": {
+    "broken_refs": [],
+    "negative_amounts": 0,
+    "null_amounts": 0,
+    "row_counts": {
+      "_fee_schedule": 3,
+      "adjustments": 40,
+      "bank_txns": 219,
+      "orders": 1000,
+      "payments": 1010,
+      "settlements": 1035
+    },
+    "unknown_methods": []
+  },
+  "agreement_rate": 0.4328,
+  "confusion": {
+    "genuine_discrepancy->genuine_discrepancy": 28,
+    "genuine_discrepancy->matched": 10,
+    "genuine_discrepancy->unresolved": 42,
+    "matched->genuine_discrepancy": 78,
+    "matched->matched": 217,
+    "matched->matched_after_reasoning": 145,
+    "matched->unresolved": 410,
+    "matched_after_reasoning->genuine_discrepancy": 1,
+    "matched_after_reasoning->matched": 16,
+    "matched_after_reasoning->unresolved": 23,
+    "unresolved->genuine_discrepancy": 6,
+    "unresolved->unresolved": 29
+  },
+  "engine_ms": 155508,
+  "pack": "mixed-exceptions"
+}

@@ -18,6 +18,11 @@ web/dist/
 data/**
 !data/**/
 !data/**/.gitkeep
+!data/synthetic/*.db
+!data/synthetic/*.json
+!data/synthetic/reconriver/
+!data/synthetic/reconriver/**
+
 
 # --- misc ---
 .DS_Store

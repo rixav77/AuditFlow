@@ -1,0 +1,762 @@
+{
+  "generated_at": "2026-08-28T17:11:22+00:00",
+  "live_probes": false,
+  "batches": [
+    {
+      "batch": "batch_seed7.db",
+      "difficulty": "NORMAL",
+      "transactions": 105,
+      "elapsed_ms": 26.3,
+      "throughput_orders_per_sec": 3985.1,
+      "match_rate": 1.0,
+      "exception_precision": 1.0,
+      "exception_recall": 1.0,
+      "correct_abstention_rate": 1.0,
+      "false_match_rate": 0.0,
+      "root_cause_accuracy": 1.0,
+      "abstention_precision": 1.0,
+      "abstention_recall": 1.0,
+      "unsupported_resolution_rate": 0.0,
+      "evidence_precision": 1.0,
+      "evidence_recall": 1.0,
+      "decoy_hit_cases": 0,
+      "fabricated_link_count": 0,
+      "trap_breakdown": {
+        "BANK_ONLY_CREDIT": 1.0,
+        "CLEAN_MATCH": 1.0,
+        "MALFORMED_SOURCE_ROW": 1.0,
+        "AMBIGUOUS_CANDIDATES": 1.0,
+        "COMBINED_SETTLEMENT": 1.0,
+        "REFUND_PARTIAL": 1.0,
+        "MISSING_SETTLEMENT": 1.0,
+        "REFUND_FULL": 1.0,
+        "FEE_EXPLAINED": 1.0,
+        "SPLIT_SETTLEMENT": 1.0,
+        "LATE_SETTLEMENT": 1.0,
+        "DUPLICATE_BANK_CREDIT": 1.0,
+        "UNEXPLAINED_DELTA": 1.0,
+        "SHORT_SETTLED": 1.0
+      },
+      "cause_confusion": {
+        "BANK_ONLY_CREDIT": {
+          "genuine_discrepancy->genuine_discrepancy": 2
+        },
+        "CLEAN_MATCH": {
+          "matched->matched": 60
+        },
+        "MALFORMED_SOURCE_ROW": {
+          "data_quality->data_quality": 1
+        },
+        "AMBIGUOUS_CANDIDATES": {
+          "matched_after_reasoning->matched_after_reasoning": 2
+        },
+        "COMBINED_SETTLEMENT": {
+          "matched_after_reasoning->matched_after_reasoning": 6
+        },
+        "REFUND_PARTIAL": {
+          "matched_after_reasoning->matched_after_reasoning": 3
+        },
+        "MISSING_SETTLEMENT": {
+          "unresolved->unresolved": 4
+        },
+        "REFUND_FULL": {
+          "matched_after_reasoning->matched_after_reasoning": 2
+        },
+        "FEE_EXPLAINED": {
+          "matched_after_reasoning->matched_after_reasoning": 8
+        },
+        "SPLIT_SETTLEMENT": {
+          "matched_after_reasoning->matched_after_reasoning": 4
+        },
+        "LATE_SETTLEMENT": {
+          "matched_after_reasoning->matched_after_reasoning": 4
+        },
+        "DUPLICATE_BANK_CREDIT": {
+          "genuine_discrepancy->genuine_discrepancy": 3
+        },
+        "UNEXPLAINED_DELTA": {
+          "unresolved->unresolved": 4
+        },
+        "SHORT_SETTLED": {
+          "genuine_discrepancy->genuine_discrepancy": 2
+        }
+      },
+      "avg_checks_per_case": 6.86,
+      "max_checks": 8,
+      "unresolved_without_exhaustive": 0,
+      "perturbation_mean_stability": 1.0,
+      "perturbation": {
+        "baseline_cases": 117,
+        "per_mutation": {
+          "narration_hyphen": {
+            "cases": 117,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          },
+          "narration_lower": {
+            "cases": 117,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          },
+          "narration_spaced": {
+            "cases": 117,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          },
+          "narration_prefix": {
+            "cases": 117,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          }
+        }
+      },
+      "failed_cases": [],
+      "memory": {
+        "grounded": {
+          "n": 8,
+          "rate": 1.0
+        },
+        "retrieval": {
+          "cases": 3,
+          "hit_at_1": 1.0,
+          "per": [
+            {
+              "query": "unresolved misses",
+              "expect": "unresolved",
+              "hit": true
+            },
+            {
+              "query": "match rate run summary",
+              "expect": "match_rate",
+              "hit": true
+            },
+            {
+              "query": "tool failure retry",
+              "expect": "failed",
+              "hit": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": "batch_seed42.db",
+      "difficulty": "NORMAL",
+      "transactions": 68,
+      "elapsed_ms": 14.5,
+      "throughput_orders_per_sec": 4683.5,
+      "match_rate": 1.0,
+      "exception_precision": 1.0,
+      "exception_recall": 1.0,
+      "correct_abstention_rate": 1.0,
+      "false_match_rate": 0.0,
+      "root_cause_accuracy": 1.0,
+      "abstention_precision": 1.0,
+      "abstention_recall": 1.0,
+      "unsupported_resolution_rate": 0.0,
+      "evidence_precision": 1.0,
+      "evidence_recall": 1.0,
+      "decoy_hit_cases": 0,
+      "fabricated_link_count": 0,
+      "trap_breakdown": {
+        "BANK_ONLY_CREDIT": 1.0,
+        "COMBINED_SETTLEMENT": 1.0,
+        "FEE_EXPLAINED": 1.0,
+        "MISSING_SETTLEMENT": 1.0,
+        "CLEAN_MATCH": 1.0,
+        "UNEXPLAINED_DELTA": 1.0,
+        "SPLIT_SETTLEMENT": 1.0,
+        "LATE_SETTLEMENT": 1.0,
+        "AMBIGUOUS_CANDIDATES": 1.0,
+        "SHORT_SETTLED": 1.0,
+        "MALFORMED_SOURCE_ROW": 1.0,
+        "REFUND_PARTIAL": 1.0,
+        "DUPLICATE_BANK_CREDIT": 1.0,
+        "REFUND_FULL": 1.0
+      },
+      "cause_confusion": {
+        "BANK_ONLY_CREDIT": {
+          "genuine_discrepancy->genuine_discrepancy": 2
+        },
+        "COMBINED_SETTLEMENT": {
+          "matched_after_reasoning->matched_after_reasoning": 9
+        },
+        "FEE_EXPLAINED": {
+          "matched_after_reasoning->matched_after_reasoning": 8
+        },
+        "MISSING_SETTLEMENT": {
+          "unresolved->unresolved": 4
+        },
+        "CLEAN_MATCH": {
+          "matched->matched": 20
+        },
+        "UNEXPLAINED_DELTA": {
+          "unresolved->unresolved": 4
+        },
+        "SPLIT_SETTLEMENT": {
+          "matched_after_reasoning->matched_after_reasoning": 4
+        },
+        "LATE_SETTLEMENT": {
+          "matched_after_reasoning->matched_after_reasoning": 4
+        },
+        "AMBIGUOUS_CANDIDATES": {
+          "matched_after_reasoning->matched_after_reasoning": 2
+        },
+        "SHORT_SETTLED": {
+          "genuine_discrepancy->genuine_discrepancy": 2
+        },
+        "MALFORMED_SOURCE_ROW": {
+          "data_quality->data_quality": 1
+        },
+        "REFUND_PARTIAL": {
+          "matched_after_reasoning->matched_after_reasoning": 3
+        },
+        "DUPLICATE_BANK_CREDIT": {
+          "genuine_discrepancy->genuine_discrepancy": 3
+        },
+        "REFUND_FULL": {
+          "matched_after_reasoning->matched_after_reasoning": 2
+        }
+      },
+      "avg_checks_per_case": 7.18,
+      "max_checks": 8,
+      "unresolved_without_exhaustive": 0,
+      "perturbation_mean_stability": 1.0,
+      "perturbation": {
+        "baseline_cases": 80,
+        "per_mutation": {
+          "narration_hyphen": {
+            "cases": 80,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          },
+          "narration_lower": {
+            "cases": 80,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          },
+          "narration_spaced": {
+            "cases": 80,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          },
+          "narration_prefix": {
+            "cases": 80,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          }
+        }
+      },
+      "failed_cases": [],
+      "memory": {
+        "grounded": {
+          "n": 8,
+          "rate": 1.0
+        },
+        "retrieval": {
+          "cases": 3,
+          "hit_at_1": 1.0,
+          "per": [
+            {
+              "query": "unresolved misses",
+              "expect": "unresolved",
+              "hit": true
+            },
+            {
+              "query": "match rate run summary",
+              "expect": "match_rate",
+              "hit": true
+            },
+            {
+              "query": "tool failure retry",
+              "expect": "failed",
+              "hit": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": "batch_seed1337.db",
+      "difficulty": "NORMAL",
+      "transactions": 67,
+      "elapsed_ms": 17.1,
+      "throughput_orders_per_sec": 3921.5,
+      "match_rate": 1.0,
+      "exception_precision": 1.0,
+      "exception_recall": 1.0,
+      "correct_abstention_rate": 1.0,
+      "false_match_rate": 0.0,
+      "root_cause_accuracy": 1.0,
+      "abstention_precision": 1.0,
+      "abstention_recall": 1.0,
+      "unsupported_resolution_rate": 0.0,
+      "evidence_precision": 1.0,
+      "evidence_recall": 1.0,
+      "decoy_hit_cases": 0,
+      "fabricated_link_count": 0,
+      "trap_breakdown": {
+        "BANK_ONLY_CREDIT": 1.0,
+        "REFUND_FULL": 1.0,
+        "MISSING_SETTLEMENT": 1.0,
+        "SPLIT_SETTLEMENT": 1.0,
+        "FEE_EXPLAINED": 1.0,
+        "CLEAN_MATCH": 1.0,
+        "LATE_SETTLEMENT": 1.0,
+        "MALFORMED_SOURCE_ROW": 1.0,
+        "REFUND_PARTIAL": 1.0,
+        "DUPLICATE_BANK_CREDIT": 1.0,
+        "SHORT_SETTLED": 1.0,
+        "UNEXPLAINED_DELTA": 1.0,
+        "COMBINED_SETTLEMENT": 1.0,
+        "AMBIGUOUS_CANDIDATES": 1.0
+      },
+      "cause_confusion": {
+        "BANK_ONLY_CREDIT": {
+          "genuine_discrepancy->genuine_discrepancy": 2
+        },
+        "REFUND_FULL": {
+          "matched_after_reasoning->matched_after_reasoning": 2
+        },
+        "MISSING_SETTLEMENT": {
+          "unresolved->unresolved": 4
+        },
+        "SPLIT_SETTLEMENT": {
+          "matched_after_reasoning->matched_after_reasoning": 4
+        },
+        "FEE_EXPLAINED": {
+          "matched_after_reasoning->matched_after_reasoning": 8
+        },
+        "CLEAN_MATCH": {
+          "matched->matched": 20
+        },
+        "LATE_SETTLEMENT": {
+          "matched_after_reasoning->matched_after_reasoning": 4
+        },
+        "MALFORMED_SOURCE_ROW": {
+          "data_quality->data_quality": 1
+        },
+        "REFUND_PARTIAL": {
+          "matched_after_reasoning->matched_after_reasoning": 3
+        },
+        "DUPLICATE_BANK_CREDIT": {
+          "genuine_discrepancy->genuine_discrepancy": 3
+        },
+        "SHORT_SETTLED": {
+          "genuine_discrepancy->genuine_discrepancy": 2
+        },
+        "UNEXPLAINED_DELTA": {
+          "unresolved->unresolved": 4
+        },
+        "COMBINED_SETTLEMENT": {
+          "matched_after_reasoning->matched_after_reasoning": 8
+        },
+        "AMBIGUOUS_CANDIDATES": {
+          "matched_after_reasoning->matched_after_reasoning": 2
+        }
+      },
+      "avg_checks_per_case": 7.64,
+      "max_checks": 8,
+      "unresolved_without_exhaustive": 0,
+      "perturbation_mean_stability": 1.0,
+      "perturbation": {
+        "baseline_cases": 79,
+        "per_mutation": {
+          "narration_hyphen": {
+            "cases": 79,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          },
+          "narration_lower": {
+            "cases": 79,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          },
+          "narration_spaced": {
+            "cases": 79,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          },
+          "narration_prefix": {
+            "cases": 79,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          }
+        }
+      },
+      "failed_cases": [],
+      "memory": {
+        "grounded": {
+          "n": 8,
+          "rate": 1.0
+        },
+        "retrieval": {
+          "cases": 3,
+          "hit_at_1": 1.0,
+          "per": [
+            {
+              "query": "unresolved misses",
+              "expect": "unresolved",
+              "hit": true
+            },
+            {
+              "query": "match rate run summary",
+              "expect": "match_rate",
+              "hit": true
+            },
+            {
+              "query": "tool failure retry",
+              "expect": "failed",
+              "hit": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": "batch_seed9001.db",
+      "difficulty": "NORMAL",
+      "transactions": 77,
+      "elapsed_ms": 18.6,
+      "throughput_orders_per_sec": 4149.3,
+      "match_rate": 0.9672,
+      "exception_precision": 1.0,
+      "exception_recall": 1.0,
+      "correct_abstention_rate": 1.0,
+      "false_match_rate": 0.0,
+      "root_cause_accuracy": 0.9952,
+      "abstention_precision": 1.0,
+      "abstention_recall": 1.0,
+      "unsupported_resolution_rate": 0.0,
+      "evidence_precision": 1.0,
+      "evidence_recall": 0.9802,
+      "decoy_hit_cases": 0,
+      "fabricated_link_count": 0,
+      "trap_breakdown": {
+        "BANK_ONLY_CREDIT": 1.0,
+        "AMBIGUOUS_CANDIDATES": 1.0,
+        "CLEAN_MATCH": 0.9333,
+        "LATE_SETTLEMENT": 1.0,
+        "MISSING_SETTLEMENT": 1.0,
+        "DUPLICATE_BANK_CREDIT": 1.0,
+        "REFUND_PARTIAL": 1.0,
+        "FEE_EXPLAINED": 1.0,
+        "REFUND_FULL": 1.0,
+        "SHORT_SETTLED": 1.0,
+        "SPLIT_SETTLEMENT": 1.0,
+        "UNEXPLAINED_DELTA": 1.0,
+        "COMBINED_SETTLEMENT": 1.0,
+        "MALFORMED_SOURCE_ROW": 1.0
+      },
+      "cause_confusion": {
+        "BANK_ONLY_CREDIT": {
+          "genuine_discrepancy->genuine_discrepancy": 2
+        },
+        "AMBIGUOUS_CANDIDATES": {
+          "matched_after_reasoning->matched_after_reasoning": 2
+        },
+        "CLEAN_MATCH": {
+          "matched->matched": 28,
+          "matched->ignored_noise": 2
+        },
+        "LATE_SETTLEMENT": {
+          "matched_after_reasoning->matched_after_reasoning": 4
+        },
+        "MISSING_SETTLEMENT": {
+          "unresolved->unresolved": 4
+        },
+        "DUPLICATE_BANK_CREDIT": {
+          "genuine_discrepancy->genuine_discrepancy": 3
+        },
+        "REFUND_PARTIAL": {
+          "matched_after_reasoning->matched_after_reasoning": 3
+        },
+        "FEE_EXPLAINED": {
+          "matched_after_reasoning->matched_after_reasoning": 8
+        },
+        "REFUND_FULL": {
+          "matched_after_reasoning->matched_after_reasoning": 2
+        },
+        "SHORT_SETTLED": {
+          "genuine_discrepancy->genuine_discrepancy": 2
+        },
+        "SPLIT_SETTLEMENT": {
+          "matched_after_reasoning->matched_after_reasoning": 4
+        },
+        "UNEXPLAINED_DELTA": {
+          "unresolved->unresolved": 4
+        },
+        "COMBINED_SETTLEMENT": {
+          "matched_after_reasoning->matched_after_reasoning": 8
+        },
+        "MALFORMED_SOURCE_ROW": {
+          "data_quality->data_quality": 1
+        }
+      },
+      "avg_checks_per_case": 7.36,
+      "max_checks": 8,
+      "unresolved_without_exhaustive": 0,
+      "perturbation_mean_stability": 1.0,
+      "perturbation": {
+        "baseline_cases": 91,
+        "per_mutation": {
+          "narration_hyphen": {
+            "cases": 91,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          },
+          "narration_lower": {
+            "cases": 91,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          },
+          "narration_spaced": {
+            "cases": 91,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          },
+          "narration_prefix": {
+            "cases": 91,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          }
+        }
+      },
+      "failed_cases": [
+        {
+          "work_key": "ORD-100139",
+          "expected_class": "matched",
+          "predicted_class": "ignored_noise",
+          "cause": "CLEAN_MATCH",
+          "abstention_expected": false,
+          "evidence_recall": 0.25,
+          "evidence_precision": 1.0,
+          "decoy_hit": false
+        },
+        {
+          "work_key": "ORD-100181",
+          "expected_class": "matched",
+          "predicted_class": "ignored_noise",
+          "cause": "CLEAN_MATCH",
+          "abstention_expected": false,
+          "evidence_recall": 0.25,
+          "evidence_precision": 1.0,
+          "decoy_hit": false
+        }
+      ],
+      "memory": {
+        "grounded": {
+          "n": 8,
+          "rate": 1.0
+        },
+        "retrieval": {
+          "cases": 3,
+          "hit_at_1": 1.0,
+          "per": [
+            {
+              "query": "unresolved misses",
+              "expect": "unresolved",
+              "hit": true
+            },
+            {
+              "query": "match rate run summary",
+              "expect": "match_rate",
+              "hit": true
+            },
+            {
+              "query": "tool failure retry",
+              "expect": "failed",
+              "hit": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": "batch_seed9002.db",
+      "difficulty": "HARD",
+      "transactions": 78,
+      "elapsed_ms": 21.3,
+      "throughput_orders_per_sec": 3665.7,
+      "match_rate": 1.0,
+      "exception_precision": 1.0,
+      "exception_recall": 1.0,
+      "correct_abstention_rate": 0.875,
+      "false_match_rate": 0.0,
+      "root_cause_accuracy": 0.9464,
+      "abstention_precision": 0.875,
+      "abstention_recall": 0.875,
+      "unsupported_resolution_rate": 0.0145,
+      "evidence_precision": 1.0,
+      "evidence_recall": 0.9967,
+      "decoy_hit_cases": 0,
+      "fabricated_link_count": 0,
+      "trap_breakdown": {
+        "BANK_ONLY_CREDIT": 1.0,
+        "LATE_SETTLEMENT": 1.0,
+        "AMBIGUOUS_CANDIDATES": 1.0,
+        "SHORT_SETTLED": 0.5,
+        "UNEXPLAINED_DELTA": 0.75,
+        "DUPLICATE_BANK_CREDIT": 1.0,
+        "CLEAN_MATCH": 1.0,
+        "FEE_EXPLAINED": 1.0,
+        "MISSING_SETTLEMENT": 1.0,
+        "REFUND_FULL": 1.0,
+        "REFUND_PARTIAL": 1.0,
+        "COMBINED_SETTLEMENT": 1.0,
+        "SPLIT_SETTLEMENT": 1.0,
+        "MALFORMED_SOURCE_ROW": 1.0
+      },
+      "cause_confusion": {
+        "BANK_ONLY_CREDIT": {
+          "genuine_discrepancy->genuine_discrepancy": 2
+        },
+        "LATE_SETTLEMENT": {
+          "matched_after_reasoning->matched_after_reasoning": 4
+        },
+        "AMBIGUOUS_CANDIDATES": {
+          "matched_after_reasoning->matched_after_reasoning": 2
+        },
+        "SHORT_SETTLED": {
+          "genuine_discrepancy->unresolved": 1,
+          "genuine_discrepancy->genuine_discrepancy": 1
+        },
+        "UNEXPLAINED_DELTA": {
+          "unresolved->unresolved": 3,
+          "unresolved->genuine_discrepancy": 1
+        },
+        "DUPLICATE_BANK_CREDIT": {
+          "genuine_discrepancy->genuine_discrepancy": 3
+        },
+        "CLEAN_MATCH": {
+          "matched->matched": 30
+        },
+        "FEE_EXPLAINED": {
+          "matched_after_reasoning->matched_after_reasoning": 8
+        },
+        "MISSING_SETTLEMENT": {
+          "unresolved->unresolved": 4
+        },
+        "REFUND_FULL": {
+          "matched_after_reasoning->matched_after_reasoning": 2
+        },
+        "REFUND_PARTIAL": {
+          "matched_after_reasoning->matched_after_reasoning": 3
+        },
+        "COMBINED_SETTLEMENT": {
+          "matched_after_reasoning->matched_after_reasoning": 9
+        },
+        "SPLIT_SETTLEMENT": {
+          "matched_after_reasoning->matched_after_reasoning": 4
+        },
+        "MALFORMED_SOURCE_ROW": {
+          "data_quality->data_quality": 1
+        }
+      },
+      "avg_checks_per_case": 7.59,
+      "max_checks": 8,
+      "unresolved_without_exhaustive": 0,
+      "perturbation_mean_stability": 1.0,
+      "perturbation": {
+        "baseline_cases": 101,
+        "per_mutation": {
+          "narration_hyphen": {
+            "cases": 101,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          },
+          "narration_lower": {
+            "cases": 101,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          },
+          "narration_spaced": {
+            "cases": 101,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          },
+          "narration_prefix": {
+            "cases": 101,
+            "changed": 0,
+            "stability": 1.0,
+            "details": {}
+          }
+        }
+      },
+      "failed_cases": [
+        {
+          "work_key": "ORD-100008",
+          "expected_class": "genuine_discrepancy",
+          "predicted_class": "unresolved",
+          "cause": "SHORT_SETTLED",
+          "abstention_expected": false,
+          "evidence_recall": 1.0,
+          "evidence_precision": 1.0,
+          "decoy_hit": false
+        },
+        {
+          "work_key": "ORD-100047",
+          "expected_class": "unresolved",
+          "predicted_class": "genuine_discrepancy",
+          "cause": "UNEXPLAINED_DELTA",
+          "abstention_expected": true,
+          "evidence_recall": 0.75,
+          "evidence_precision": 1.0,
+          "decoy_hit": false
+        }
+      ],
+      "memory": {
+        "grounded": {
+          "n": 8,
+          "rate": 1.0
+        },
+        "retrieval": {
+          "cases": 3,
+          "hit_at_1": 1.0,
+          "per": [
+            {
+              "query": "unresolved misses",
+              "expect": "unresolved",
+              "hit": true
+            },
+            {
+              "query": "match rate run summary",
+              "expect": "match_rate",
+              "hit": true
+            },
+            {
+              "query": "tool failure retry",
+              "expect": "failed",
+              "hit": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": "ReconRiver(mixed-exceptions)",
+      "match_rate": 0.4328,
+      "transactions": null,
+      "failed_cases": []
+    }
+  ]
+}

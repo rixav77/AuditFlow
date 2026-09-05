@@ -1,0 +1,1711 @@
+{
+  "batch_id": "batch_seed42",
+  "composition": {
+    "AMBIGUOUS_CANDIDATES": 2,
+    "BANK_ONLY_CREDIT": 2,
+    "CLEAN_MATCH": 20,
+    "COMBINED_SETTLEMENT": 9,
+    "DUPLICATE_BANK_CREDIT": 3,
+    "FEE_EXPLAINED": 8,
+    "LATE_SETTLEMENT": 4,
+    "MALFORMED_SOURCE_ROW": 1,
+    "MISSING_SETTLEMENT": 4,
+    "REFUND_FULL": 2,
+    "REFUND_PARTIAL": 3,
+    "SHORT_SETTLED": 2,
+    "SPLIT_SETTLEMENT": 4,
+    "UNEXPLAINED_DELTA": 4
+  },
+  "created_at": "2026-06-01",
+  "difficulty": "NORMAL",
+  "generator_version": "0.2.0",
+  "metrics_note": "definitions: docs/DATA.md section 5.3",
+  "noise_counts": {
+    "CANCELLED_ORDER": 2,
+    "FAILED_PAYMENT": 4,
+    "REVERSAL_DEBIT": 1,
+    "SVC_DEBIT": 3
+  },
+  "seed": 42,
+  "size": 60,
+  "transactions": [
+    {
+      "abstention_expected": false,
+      "cause_code": "BANK_ONLY_CREDIT",
+      "decoys": [],
+      "expected_class": "genuine_discrepancy",
+      "expected_delta_paise": 28111300,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000256"
+        ],
+        "orders": [],
+        "payments": [],
+        "settlements": []
+      },
+      "explanation_human": "unmatched inflow Rs281113 (PATEL STATIONERY); no source chain",
+      "scope": "bank",
+      "work_key": "BANK-3000256"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "BANK_ONLY_CREDIT",
+      "decoys": [],
+      "expected_class": "genuine_discrepancy",
+      "expected_delta_paise": 229200,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000263"
+        ],
+        "orders": [],
+        "payments": [],
+        "settlements": []
+      },
+      "explanation_human": "unmatched inflow Rs2292 (SHARMA TEXTILES); no source chain",
+      "scope": "bank",
+      "work_key": "BANK-3000263"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "COMBINED_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000006"
+        ],
+        "orders": [
+          "ORD-100001"
+        ],
+        "payments": [
+          "PAY-500004"
+        ],
+        "settlements": [
+          "SET-800005"
+        ]
+      },
+      "explanation_human": "one payout Rs8201 covering 3 payments",
+      "scope": "order",
+      "work_key": "ORD-100001"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "COMBINED_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000006"
+        ],
+        "orders": [
+          "ORD-100007"
+        ],
+        "payments": [
+          "PAY-500006"
+        ],
+        "settlements": [
+          "SET-800008"
+        ]
+      },
+      "explanation_human": "one payout Rs8201 covering 3 payments",
+      "scope": "order",
+      "work_key": "ORD-100007"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "COMBINED_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000006"
+        ],
+        "orders": [
+          "ORD-100010"
+        ],
+        "payments": [
+          "PAY-500009"
+        ],
+        "settlements": [
+          "SET-800014"
+        ]
+      },
+      "explanation_human": "one payout Rs8201 covering 3 payments",
+      "scope": "order",
+      "work_key": "ORD-100010"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "FEE_EXPLAINED",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 75588,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000012"
+        ],
+        "orders": [
+          "ORD-100017"
+        ],
+        "payments": [
+          "PAY-500013"
+        ],
+        "settlements": []
+      },
+      "explanation_human": "wallet fee 160bps+Rs2 + GST18% => net 3915512",
+      "scope": "order",
+      "work_key": "ORD-100017"
+    },
+    {
+      "abstention_expected": true,
+      "cause_code": "MISSING_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "unresolved",
+      "expected_delta_paise": 396900,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [],
+        "orders": [
+          "ORD-100021"
+        ],
+        "payments": [
+          "PAY-500018"
+        ],
+        "settlements": []
+      },
+      "explanation_human": "captured payment Rs3969; no settlement/bank trace (expected ~Rs3969)",
+      "scope": "order",
+      "work_key": "ORD-100021"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000015"
+        ],
+        "orders": [
+          "ORD-100023"
+        ],
+        "payments": [
+          "PAY-500020"
+        ],
+        "settlements": [
+          "SET-800015"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100023"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000018"
+        ],
+        "orders": [
+          "ORD-100027"
+        ],
+        "payments": [
+          "PAY-500025"
+        ],
+        "settlements": [
+          "SET-800020"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100027"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "FEE_EXPLAINED",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 43523,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000025"
+        ],
+        "orders": [
+          "ORD-100033"
+        ],
+        "payments": [
+          "PAY-500031"
+        ],
+        "settlements": []
+      },
+      "explanation_human": "credit_card fee 200bps+Rs2 + GST18% => net 1790677",
+      "scope": "order",
+      "work_key": "ORD-100033"
+    },
+    {
+      "abstention_expected": true,
+      "cause_code": "UNEXPLAINED_DELTA",
+      "decoys": [],
+      "expected_class": "unresolved",
+      "expected_delta_paise": 23300,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000031"
+        ],
+        "orders": [
+          "ORD-100040"
+        ],
+        "payments": [
+          "PAY-500033"
+        ],
+        "settlements": [
+          "SET-800021"
+        ]
+      },
+      "explanation_human": "settlement says net 314262, bank sent 290962; no record explains Rs233",
+      "scope": "order",
+      "work_key": "ORD-100040"
+    },
+    {
+      "abstention_expected": true,
+      "cause_code": "UNEXPLAINED_DELTA",
+      "decoys": [],
+      "expected_class": "unresolved",
+      "expected_delta_paise": 121700,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000033"
+        ],
+        "orders": [
+          "ORD-100046"
+        ],
+        "payments": [
+          "PAY-500037"
+        ],
+        "settlements": [
+          "SET-800025"
+        ]
+      },
+      "explanation_human": "settlement says net 3985680, bank sent 3863980; no record explains Rs1217",
+      "scope": "order",
+      "work_key": "ORD-100046"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "SPLIT_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000038",
+          "BANK-3000041"
+        ],
+        "orders": [
+          "ORD-100051"
+        ],
+        "payments": [
+          "PAY-500043"
+        ],
+        "settlements": [
+          "SET-800029",
+          "SET-800033"
+        ]
+      },
+      "explanation_human": "net 439200 split into 2 legs summing to 439200",
+      "scope": "order",
+      "work_key": "ORD-100051"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000043"
+        ],
+        "orders": [
+          "ORD-100053"
+        ],
+        "payments": [
+          "PAY-500045"
+        ],
+        "settlements": [
+          "SET-800037"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100053"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000047"
+        ],
+        "orders": [
+          "ORD-100055"
+        ],
+        "payments": [
+          "PAY-500047"
+        ],
+        "settlements": [
+          "SET-800044"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100055"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "COMBINED_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000053"
+        ],
+        "orders": [
+          "ORD-100058"
+        ],
+        "payments": [
+          "PAY-500052"
+        ],
+        "settlements": [
+          "SET-800045"
+        ]
+      },
+      "explanation_human": "one payout Rs10425 covering 4 payments",
+      "scope": "order",
+      "work_key": "ORD-100058"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "COMBINED_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000053"
+        ],
+        "orders": [
+          "ORD-100059"
+        ],
+        "payments": [
+          "PAY-500058"
+        ],
+        "settlements": [
+          "SET-800051"
+        ]
+      },
+      "explanation_human": "one payout Rs10425 covering 4 payments",
+      "scope": "order",
+      "work_key": "ORD-100059"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "COMBINED_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000053"
+        ],
+        "orders": [
+          "ORD-100065"
+        ],
+        "payments": [
+          "PAY-500065"
+        ],
+        "settlements": [
+          "SET-800058"
+        ]
+      },
+      "explanation_human": "one payout Rs10425 covering 4 payments",
+      "scope": "order",
+      "work_key": "ORD-100065"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "COMBINED_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000053"
+        ],
+        "orders": [
+          "ORD-100068"
+        ],
+        "payments": [
+          "PAY-500066"
+        ],
+        "settlements": [
+          "SET-800059"
+        ]
+      },
+      "explanation_human": "one payout Rs10425 covering 4 payments",
+      "scope": "order",
+      "work_key": "ORD-100068"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "LATE_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000059"
+        ],
+        "orders": [
+          "ORD-100075"
+        ],
+        "payments": [
+          "PAY-500072"
+        ],
+        "settlements": [
+          "SET-800064"
+        ]
+      },
+      "explanation_human": "settled T+4",
+      "scope": "order",
+      "work_key": "ORD-100075"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "AMBIGUOUS_CANDIDATES",
+      "decoys": [
+        "PAY-500080",
+        "SET-800070"
+      ],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000060"
+        ],
+        "orders": [
+          "ORD-100078"
+        ],
+        "payments": [
+          "PAY-500073"
+        ],
+        "settlements": [
+          "SET-800069"
+        ]
+      },
+      "explanation_human": "twin payment PAY-500080 same amount/date; explicit order link resolves to PAY-500073",
+      "scope": "order",
+      "work_key": "ORD-100078"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "LATE_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000067"
+        ],
+        "orders": [
+          "ORD-100084"
+        ],
+        "payments": [
+          "PAY-500084"
+        ],
+        "settlements": [
+          "SET-800077"
+        ]
+      },
+      "explanation_human": "settled T+6",
+      "scope": "order",
+      "work_key": "ORD-100084"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "SHORT_SETTLED",
+      "decoys": [],
+      "expected_class": "genuine_discrepancy",
+      "expected_delta_paise": 157300.0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000073"
+        ],
+        "orders": [
+          "ORD-100091"
+        ],
+        "payments": [
+          "PAY-500091"
+        ],
+        "settlements": [
+          "SET-800081"
+        ]
+      },
+      "explanation_human": "bank short by Rs1573.0 vs settlement net; no evidence explains it",
+      "scope": "order",
+      "work_key": "ORD-100091"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000074"
+        ],
+        "orders": [
+          "ORD-100095"
+        ],
+        "payments": [
+          "PAY-500098"
+        ],
+        "settlements": [
+          "SET-800088"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100095"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "FEE_EXPLAINED",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 8880,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000077"
+        ],
+        "orders": [
+          "ORD-100097"
+        ],
+        "payments": [
+          "PAY-500100"
+        ],
+        "settlements": []
+      },
+      "explanation_human": "netbanking fee 180bps+Rs5 + GST18% => net 381420",
+      "scope": "order",
+      "work_key": "ORD-100097"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "SHORT_SETTLED",
+      "decoys": [],
+      "expected_class": "genuine_discrepancy",
+      "expected_delta_paise": 31300.0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000084"
+        ],
+        "orders": [
+          "ORD-100100"
+        ],
+        "payments": [
+          "PAY-500103"
+        ],
+        "settlements": [
+          "SET-800092"
+        ]
+      },
+      "explanation_human": "bank short by Rs313.0 vs settlement net; no evidence explains it",
+      "scope": "order",
+      "work_key": "ORD-100100"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000089"
+        ],
+        "orders": [
+          "ORD-100103"
+        ],
+        "payments": [
+          "PAY-500107"
+        ],
+        "settlements": [
+          "SET-800096"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100103"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "LATE_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000091"
+        ],
+        "orders": [
+          "ORD-100104"
+        ],
+        "payments": [
+          "PAY-500111"
+        ],
+        "settlements": [
+          "SET-800097"
+        ]
+      },
+      "explanation_human": "settled T+6",
+      "scope": "order",
+      "work_key": "ORD-100104"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000098"
+        ],
+        "orders": [
+          "ORD-100111"
+        ],
+        "payments": [
+          "PAY-500117"
+        ],
+        "settlements": [
+          "SET-800103"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100111"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "MALFORMED_SOURCE_ROW",
+      "decoys": [],
+      "expected_class": "data_quality",
+      "expected_delta_paise": null,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000100"
+        ],
+        "orders": [
+          "ORD-100113"
+        ],
+        "payments": [
+          "PAY-500123"
+        ],
+        "settlements": [
+          "SET-800104"
+        ]
+      },
+      "explanation_human": "corrupt narration glyphs on BANK-3000100; source encoding issue",
+      "scope": "order",
+      "work_key": "ORD-100113"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "FEE_EXPLAINED",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 66071,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000107"
+        ],
+        "orders": [
+          "ORD-100116"
+        ],
+        "payments": [
+          "PAY-500129"
+        ],
+        "settlements": []
+      },
+      "explanation_human": "credit_card fee 200bps+Rs2 + GST18% => net 2723529",
+      "scope": "order",
+      "work_key": "ORD-100116"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "REFUND_PARTIAL",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [
+          "ADJ-40004"
+        ],
+        "bank_txns": [
+          "BANK-3000113",
+          "BANK-3000115"
+        ],
+        "orders": [
+          "ORD-100122"
+        ],
+        "payments": [
+          "PAY-500131"
+        ],
+        "settlements": [
+          "SET-800108"
+        ]
+      },
+      "explanation_human": "partial refund Rs14335.0 explained by ADJ-40004 + bank debit",
+      "scope": "order",
+      "work_key": "ORD-100122"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "FEE_EXPLAINED",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 4450,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000120"
+        ],
+        "orders": [
+          "ORD-100127"
+        ],
+        "payments": [
+          "PAY-500137"
+        ],
+        "settlements": []
+      },
+      "explanation_human": "debit_card fee 90bps+Rs2 + GST18% => net 392350",
+      "scope": "order",
+      "work_key": "ORD-100127"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000127"
+        ],
+        "orders": [
+          "ORD-100134"
+        ],
+        "payments": [
+          "PAY-500141"
+        ],
+        "settlements": [
+          "SET-800115"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100134"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "AMBIGUOUS_CANDIDATES",
+      "decoys": [
+        "PAY-500153",
+        "SET-800125"
+      ],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000130"
+        ],
+        "orders": [
+          "ORD-100140"
+        ],
+        "payments": [
+          "PAY-500147"
+        ],
+        "settlements": [
+          "SET-800119"
+        ]
+      },
+      "explanation_human": "twin payment PAY-500153 same amount/date; explicit order link resolves to PAY-500147",
+      "scope": "order",
+      "work_key": "ORD-100140"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "FEE_EXPLAINED",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 4298,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000134"
+        ],
+        "orders": [
+          "ORD-100141"
+        ],
+        "payments": [
+          "PAY-500157"
+        ],
+        "settlements": []
+      },
+      "explanation_human": "wallet fee 160bps+Rs2 + GST18% => net 210802",
+      "scope": "order",
+      "work_key": "ORD-100141"
+    },
+    {
+      "abstention_expected": true,
+      "cause_code": "MISSING_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "unresolved",
+      "expected_delta_paise": 338800,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [],
+        "orders": [
+          "ORD-100146"
+        ],
+        "payments": [
+          "PAY-500160"
+        ],
+        "settlements": []
+      },
+      "explanation_human": "captured payment Rs3388; no settlement/bank trace (expected ~Rs3388)",
+      "scope": "order",
+      "work_key": "ORD-100146"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000141"
+        ],
+        "orders": [
+          "ORD-100153"
+        ],
+        "payments": [
+          "PAY-500163"
+        ],
+        "settlements": [
+          "SET-800132"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100153"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "LATE_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000143"
+        ],
+        "orders": [
+          "ORD-100156"
+        ],
+        "payments": [
+          "PAY-500167"
+        ],
+        "settlements": [
+          "SET-800137"
+        ]
+      },
+      "explanation_human": "settled T+5",
+      "scope": "order",
+      "work_key": "ORD-100156"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "REFUND_PARTIAL",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [
+          "ADJ-40006"
+        ],
+        "bank_txns": [
+          "BANK-3000147",
+          "BANK-3000152"
+        ],
+        "orders": [
+          "ORD-100163"
+        ],
+        "payments": [
+          "PAY-500169"
+        ],
+        "settlements": [
+          "SET-800143"
+        ]
+      },
+      "explanation_human": "partial refund Rs651.0 explained by ADJ-40006 + bank debit",
+      "scope": "order",
+      "work_key": "ORD-100163"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "FEE_EXPLAINED",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 4424,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000159"
+        ],
+        "orders": [
+          "ORD-100167"
+        ],
+        "payments": [
+          "PAY-500170"
+        ],
+        "settlements": []
+      },
+      "explanation_human": "netbanking fee 180bps+Rs5 + GST18% => net 176076",
+      "scope": "order",
+      "work_key": "ORD-100167"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "DUPLICATE_BANK_CREDIT",
+      "decoys": [],
+      "expected_class": "genuine_discrepancy",
+      "expected_delta_paise": 374541,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000163",
+          "BANK-3000165"
+        ],
+        "orders": [
+          "ORD-100172"
+        ],
+        "payments": [
+          "PAY-500175"
+        ],
+        "settlements": [
+          "SET-800147"
+        ]
+      },
+      "explanation_human": "near-duplicate (Rs1 off): BANK-3000165 repeats BANK-3000163",
+      "scope": "order",
+      "work_key": "ORD-100172"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000167"
+        ],
+        "orders": [
+          "ORD-100179"
+        ],
+        "payments": [
+          "PAY-500178"
+        ],
+        "settlements": [
+          "SET-800151"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100179"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "SPLIT_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000169",
+          "BANK-3000172"
+        ],
+        "orders": [
+          "ORD-100180"
+        ],
+        "payments": [
+          "PAY-500184"
+        ],
+        "settlements": [
+          "SET-800158",
+          "SET-800159"
+        ]
+      },
+      "explanation_human": "net 235920 split into 2 legs summing to 235920",
+      "scope": "order",
+      "work_key": "ORD-100180"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "REFUND_FULL",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [
+          "ADJ-40008"
+        ],
+        "bank_txns": [],
+        "orders": [
+          "ORD-100187"
+        ],
+        "payments": [
+          "PAY-500187"
+        ],
+        "settlements": []
+      },
+      "explanation_human": "refunded Rs4159 before settlement; nothing further expected",
+      "scope": "order",
+      "work_key": "ORD-100187"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "SPLIT_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000173",
+          "BANK-3000180"
+        ],
+        "orders": [
+          "ORD-100191"
+        ],
+        "payments": [
+          "PAY-500192"
+        ],
+        "settlements": [
+          "SET-800163",
+          "SET-800165"
+        ]
+      },
+      "explanation_human": "net 347849 split into 2 legs summing to 347849",
+      "scope": "order",
+      "work_key": "ORD-100191"
+    },
+    {
+      "abstention_expected": true,
+      "cause_code": "MISSING_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "unresolved",
+      "expected_delta_paise": 291037,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [],
+        "orders": [
+          "ORD-100195"
+        ],
+        "payments": [
+          "PAY-500197"
+        ],
+        "settlements": []
+      },
+      "explanation_human": "captured payment Rs2944; no settlement/bank trace (expected ~Rs2910)",
+      "scope": "order",
+      "work_key": "ORD-100195"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000184"
+        ],
+        "orders": [
+          "ORD-100199"
+        ],
+        "payments": [
+          "PAY-500201"
+        ],
+        "settlements": [
+          "SET-800166"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100199"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "DUPLICATE_BANK_CREDIT",
+      "decoys": [],
+      "expected_class": "genuine_discrepancy",
+      "expected_delta_paise": 359691,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000191",
+          "BANK-3000194"
+        ],
+        "orders": [
+          "ORD-100201"
+        ],
+        "payments": [
+          "PAY-500206"
+        ],
+        "settlements": [
+          "SET-800169"
+        ]
+      },
+      "explanation_human": "exact duplicate: BANK-3000194 repeats BANK-3000191",
+      "scope": "order",
+      "work_key": "ORD-100201"
+    },
+    {
+      "abstention_expected": true,
+      "cause_code": "UNEXPLAINED_DELTA",
+      "decoys": [],
+      "expected_class": "unresolved",
+      "expected_delta_paise": 20600,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000196"
+        ],
+        "orders": [
+          "ORD-100205"
+        ],
+        "payments": [
+          "PAY-500208"
+        ],
+        "settlements": [
+          "SET-800170"
+        ]
+      },
+      "explanation_human": "settlement says net 443034, bank sent 422434; no record explains Rs206",
+      "scope": "order",
+      "work_key": "ORD-100205"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000201"
+        ],
+        "orders": [
+          "ORD-100209"
+        ],
+        "payments": [
+          "PAY-500212"
+        ],
+        "settlements": [
+          "SET-800175"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100209"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "FEE_EXPLAINED",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 9540,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000202"
+        ],
+        "orders": [
+          "ORD-100212"
+        ],
+        "payments": [
+          "PAY-500215"
+        ],
+        "settlements": []
+      },
+      "explanation_human": "wallet fee 160bps+Rs2 + GST18% => net 483260",
+      "scope": "order",
+      "work_key": "ORD-100212"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "COMBINED_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000204"
+        ],
+        "orders": [
+          "ORD-100216"
+        ],
+        "payments": [
+          "PAY-500217"
+        ],
+        "settlements": [
+          "SET-800178"
+        ]
+      },
+      "explanation_human": "one payout Rs7590 covering 2 payments",
+      "scope": "order",
+      "work_key": "ORD-100216"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "COMBINED_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000204"
+        ],
+        "orders": [
+          "ORD-100219"
+        ],
+        "payments": [
+          "PAY-500222"
+        ],
+        "settlements": [
+          "SET-800181"
+        ]
+      },
+      "explanation_human": "one payout Rs7590 covering 2 payments",
+      "scope": "order",
+      "work_key": "ORD-100219"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000205"
+        ],
+        "orders": [
+          "ORD-100223"
+        ],
+        "payments": [
+          "PAY-500225"
+        ],
+        "settlements": [
+          "SET-800187"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100223"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "SPLIT_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000207",
+          "BANK-3000211"
+        ],
+        "orders": [
+          "ORD-100224"
+        ],
+        "payments": [
+          "PAY-500232"
+        ],
+        "settlements": [
+          "SET-800192",
+          "SET-800199"
+        ]
+      },
+      "explanation_human": "net 120300 split into 2 legs summing to 120300",
+      "scope": "order",
+      "work_key": "ORD-100224"
+    },
+    {
+      "abstention_expected": true,
+      "cause_code": "MISSING_SETTLEMENT",
+      "decoys": [],
+      "expected_class": "unresolved",
+      "expected_delta_paise": 443600,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [],
+        "orders": [
+          "ORD-100230"
+        ],
+        "payments": [
+          "PAY-500236"
+        ],
+        "settlements": []
+      },
+      "explanation_human": "captured payment Rs4486; no settlement/bank trace (expected ~Rs4436)",
+      "scope": "order",
+      "work_key": "ORD-100230"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "REFUND_FULL",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [
+          "ADJ-40015"
+        ],
+        "bank_txns": [],
+        "orders": [
+          "ORD-100236"
+        ],
+        "payments": [
+          "PAY-500241"
+        ],
+        "settlements": []
+      },
+      "explanation_human": "refunded Rs3904 before settlement; nothing further expected",
+      "scope": "order",
+      "work_key": "ORD-100236"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000217"
+        ],
+        "orders": [
+          "ORD-100243"
+        ],
+        "payments": [
+          "PAY-500246"
+        ],
+        "settlements": [
+          "SET-800201"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100243"
+    },
+    {
+      "abstention_expected": true,
+      "cause_code": "UNEXPLAINED_DELTA",
+      "decoys": [],
+      "expected_class": "unresolved",
+      "expected_delta_paise": 351400,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000218"
+        ],
+        "orders": [
+          "ORD-100247"
+        ],
+        "payments": [
+          "PAY-500253"
+        ],
+        "settlements": [
+          "SET-800207"
+        ]
+      },
+      "explanation_human": "settlement says net 4826360, bank sent 4474960; no record explains Rs3514",
+      "scope": "order",
+      "work_key": "ORD-100247"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000224"
+        ],
+        "orders": [
+          "ORD-100248"
+        ],
+        "payments": [
+          "PAY-500259"
+        ],
+        "settlements": [
+          "SET-800210"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100248"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000231"
+        ],
+        "orders": [
+          "ORD-100255"
+        ],
+        "payments": [
+          "PAY-500262"
+        ],
+        "settlements": [
+          "SET-800212"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100255"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000232"
+        ],
+        "orders": [
+          "ORD-100260"
+        ],
+        "payments": [
+          "PAY-500269"
+        ],
+        "settlements": [
+          "SET-800218"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100260"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000237"
+        ],
+        "orders": [
+          "ORD-100266"
+        ],
+        "payments": [
+          "PAY-500276"
+        ],
+        "settlements": [
+          "SET-800221"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100266"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "DUPLICATE_BANK_CREDIT",
+      "decoys": [],
+      "expected_class": "genuine_discrepancy",
+      "expected_delta_paise": 90667,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000238",
+          "BANK-3000243"
+        ],
+        "orders": [
+          "ORD-100268"
+        ],
+        "payments": [
+          "PAY-500280"
+        ],
+        "settlements": [
+          "SET-800224"
+        ]
+      },
+      "explanation_human": "exact duplicate: BANK-3000243 repeats BANK-3000238",
+      "scope": "order",
+      "work_key": "ORD-100268"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000247"
+        ],
+        "orders": [
+          "ORD-100274"
+        ],
+        "payments": [
+          "PAY-500283"
+        ],
+        "settlements": [
+          "SET-800229"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100274"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "CLEAN_MATCH",
+      "decoys": [],
+      "expected_class": "matched",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [],
+        "bank_txns": [
+          "BANK-3000248"
+        ],
+        "orders": [
+          "ORD-100275"
+        ],
+        "payments": [
+          "PAY-500285"
+        ],
+        "settlements": [
+          "SET-800236"
+        ]
+      },
+      "explanation_human": "end-to-end exact",
+      "scope": "order",
+      "work_key": "ORD-100275"
+    },
+    {
+      "abstention_expected": false,
+      "cause_code": "REFUND_PARTIAL",
+      "decoys": [],
+      "expected_class": "matched_after_reasoning",
+      "expected_delta_paise": 0,
+      "expected_links": {
+        "adjustments": [
+          "ADJ-40020"
+        ],
+        "bank_txns": [
+          "BANK-3000253",
+          "BANK-3000255"
+        ],
+        "orders": [
+          "ORD-100281"
+        ],
+        "payments": [
+          "PAY-500292"
+        ],
+        "settlements": [
+          "SET-800241"
+        ]
+      },
+      "explanation_human": "partial refund Rs331.0 explained by ADJ-40020 + bank debit",
+      "scope": "order",
+      "work_key": "ORD-100281"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "batch_id": "batch_seed42",
+  "cause_histogram": {
+    "AMBIGUOUS_CANDIDATES": 2,
+    "BANK_ONLY_CREDIT": 2,
+    "CLEAN_MATCH": 20,
+    "COMBINED_SETTLEMENT": 9,
+    "DUPLICATE_BANK_CREDIT": 3,
+    "FEE_EXPLAINED": 8,
+    "LATE_SETTLEMENT": 4,
+    "MALFORMED_SOURCE_ROW": 1,
+    "MISSING_SETTLEMENT": 4,
+    "REFUND_FULL": 2,
+    "REFUND_PARTIAL": 3,
+    "SHORT_SETTLED": 2,
+    "SPLIT_SETTLEMENT": 4,
+    "UNEXPLAINED_DELTA": 4
+  },
+  "files": {
+    "batch_seed42.db": "26d1af5bf99049e2c3a43cd3b1bd59532cc6b85473905f188eafbfb28243ed38",
+    "ground_truth_seed42.json": "20704c47133905c4c713b1e8407fe8d5b3ce9396128891456101b9ef60f540e6"
+  },
+  "generated_by_run_at": "2026-08-26T09:48:21+00:00",
+  "noise_counts": {
+    "CANCELLED_ORDER": 2,
+    "FAILED_PAYMENT": 4,
+    "REVERSAL_DEBIT": 1,
+    "SVC_DEBIT": 3
+  },
+  "row_counts": {
+    "adjustments": 5,
+    "audit_events": 62,
+    "bank_txns": 70,
+    "orders": 72,
+    "payments": 72,
+    "settlements": 58
+  }
+}

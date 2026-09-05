@@ -1,0 +1,5447 @@
+{
+  "batch_db": "batch_seed9002.db",
+  "elapsed_sec": 0.029448888002661988,
+  "results_sha256": "082c7c8cb62f2bbf17fa6d5d716c3781636bceccf699ce9a4509f7fe3264fba7",
+  "verdicts": [
+    {
+      "bundle_bid": "bank:BANK-3000001",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "SET-800005"
+      ],
+      "findings": [
+        {
+          "actual_paise": 94700,
+          "delta_paise": 0,
+          "expected_paise": 94700,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 93459,
+          "delta_paise": 0,
+          "expected_paise": 93459,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 93459,
+          "delta_paise": 0,
+          "expected_paise": 93459,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 93459,
+          "delta_paise": -1241,
+          "expected_paise": 94700,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100001",
+        "pay:PAY-500001",
+        "settle:SET-800005",
+        "bank:BANK-3000001"
+      ],
+      "reason_code": "INV_TIMING_OK",
+      "work_key": "ORD-100001"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000005",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "PAY-500012"
+      ],
+      "findings": [
+        {
+          "actual_paise": 63600,
+          "delta_paise": 0,
+          "expected_paise": 63600,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 62163,
+          "delta_paise": 0,
+          "expected_paise": 62163,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 62163,
+          "delta_paise": 0,
+          "expected_paise": 62163,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 62163,
+          "delta_paise": -1437,
+          "expected_paise": 63600,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100007",
+        "pay:PAY-500006",
+        "settle:SET-800011",
+        "bank:BANK-3000005"
+      ],
+      "reason_code": "INV_AMBIGUOUS_TWIN",
+      "work_key": "ORD-100007"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000011",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "unresolved",
+      "evidence_ids": [
+        "PAY-500016"
+      ],
+      "findings": [
+        {
+          "actual_paise": 250900,
+          "delta_paise": 0,
+          "expected_paise": 250900,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 248000,
+          "delta_paise": 0,
+          "expected_paise": 248000,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 210400,
+          "delta_paise": -37600,
+          "expected_paise": 248000,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 210400,
+          "delta_paise": -40500,
+          "expected_paise": 250900,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100008",
+        "pay:PAY-500016",
+        "settle:SET-800017",
+        "bank:BANK-3000011"
+      ],
+      "reason_code": "INV_EXHAUSTIVE_NO_EVIDENCE",
+      "work_key": "ORD-100008"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000012",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "unresolved",
+      "evidence_ids": [
+        "PAY-500022"
+      ],
+      "findings": [
+        {
+          "actual_paise": 4882800,
+          "delta_paise": 0,
+          "expected_paise": 4882800,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 4767330,
+          "delta_paise": 0,
+          "expected_paise": 4767330,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 4315130,
+          "delta_paise": -452200,
+          "expected_paise": 4767330,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 4315130,
+          "delta_paise": -567670,
+          "expected_paise": 4882800,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100010",
+        "pay:PAY-500022",
+        "settle:SET-800020",
+        "bank:BANK-3000012"
+      ],
+      "reason_code": "INV_EXHAUSTIVE_NO_EVIDENCE",
+      "work_key": "ORD-100010"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000021",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "genuine_discrepancy",
+      "evidence_ids": [
+        "BANK-3000020",
+        "BANK-3000021"
+      ],
+      "findings": [
+        {
+          "actual_paise": 331700,
+          "delta_paise": 0,
+          "expected_paise": 331700,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 323636,
+          "delta_paise": 0,
+          "expected_paise": 323636,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 647272,
+          "delta_paise": 323636,
+          "expected_paise": 323636,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 647272,
+          "delta_paise": 315572,
+          "expected_paise": 331700,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100019",
+        "pay:PAY-500027",
+        "settle:SET-800025",
+        "bank:BANK-3000020",
+        "bank:BANK-3000021"
+      ],
+      "reason_code": "INV_DUPLICATE",
+      "work_key": "ORD-100019"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000024",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000024"
+      ],
+      "findings": [
+        {
+          "actual_paise": 234500,
+          "delta_paise": 0,
+          "expected_paise": 234500,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 228730,
+          "delta_paise": 0,
+          "expected_paise": 228730,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 228730,
+          "delta_paise": 0,
+          "expected_paise": 228730,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 228730,
+          "delta_paise": -5770,
+          "expected_paise": 234500,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100022",
+        "pay:PAY-500031",
+        "settle:SET-800032",
+        "bank:BANK-3000024"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100022"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000029",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000029"
+      ],
+      "findings": [
+        {
+          "actual_paise": 374100,
+          "delta_paise": 0,
+          "expected_paise": 374100,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 369891,
+          "delta_paise": 0,
+          "expected_paise": 369891,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 369891,
+          "delta_paise": 0,
+          "expected_paise": 369891,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 369891,
+          "delta_paise": -4209,
+          "expected_paise": 374100,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100023",
+        "pay:PAY-500037",
+        "settle:SET-800035",
+        "bank:BANK-3000029"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100023"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000036",
+      "checks_run": [],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000036"
+      ],
+      "findings": [
+        {
+          "actual_paise": 69900,
+          "delta_paise": 0,
+          "expected_paise": 69900,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 69900,
+          "delta_paise": 0,
+          "expected_paise": 69900,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 69900,
+          "delta_paise": 0,
+          "expected_paise": 69900,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 69900,
+          "delta_paise": 0,
+          "expected_paise": 69900,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100029",
+        "pay:PAY-500040",
+        "settle:SET-800038",
+        "bank:BANK-3000036"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100029"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000042",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000042"
+      ],
+      "findings": [
+        {
+          "actual_paise": 3180700,
+          "delta_paise": 0,
+          "expected_paise": 3180700,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 3146685,
+          "delta_paise": 0,
+          "expected_paise": 3146685,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 3146685,
+          "delta_paise": 0,
+          "expected_paise": 3146685,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 3146685,
+          "delta_paise": -34015,
+          "expected_paise": 3180700,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100033",
+        "pay:PAY-500043",
+        "settle:SET-800039",
+        "bank:BANK-3000042"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100033"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000043",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000043"
+      ],
+      "findings": [
+        {
+          "actual_paise": 429000,
+          "delta_paise": 0,
+          "expected_paise": 429000,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 420664,
+          "delta_paise": 0,
+          "expected_paise": 420664,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 420664,
+          "delta_paise": 0,
+          "expected_paise": 420664,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 420664,
+          "delta_paise": -8336,
+          "expected_paise": 429000,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100035",
+        "pay:PAY-500044",
+        "settle:SET-800045",
+        "bank:BANK-3000043"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100035"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000045",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "PAY-500045"
+      ],
+      "findings": [
+        {
+          "actual_paise": 250800,
+          "delta_paise": 0,
+          "expected_paise": 250800,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -244645,
+          "expected_paise": 244645,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 244645,
+          "delta_paise": 244645,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 244645,
+          "delta_paise": -6155,
+          "expected_paise": 250800,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100039",
+        "pay:PAY-500045",
+        "bank:BANK-3000045"
+      ],
+      "reason_code": "INV_FEE_MATCH",
+      "work_key": "ORD-100039"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000050",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "PAY-500052"
+      ],
+      "findings": [
+        {
+          "actual_paise": 2512600,
+          "delta_paise": 0,
+          "expected_paise": 2512600,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -2458642,
+          "expected_paise": 2458642,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 2458642,
+          "delta_paise": 2458642,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 2458642,
+          "delta_paise": -53958,
+          "expected_paise": 2512600,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100044",
+        "pay:PAY-500052",
+        "bank:BANK-3000050"
+      ],
+      "reason_code": "INV_FEE_MATCH",
+      "work_key": "ORD-100044"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000053",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "genuine_discrepancy",
+      "evidence_ids": [
+        "BANK-3000053"
+      ],
+      "findings": [
+        {
+          "actual_paise": 412059,
+          "delta_paise": 412059,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "bank:BANK-3000053"
+      ],
+      "reason_code": "INV_UNMATCHED_INFLOW",
+      "work_key": "BANK-3000053"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000055",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "SET-800053"
+      ],
+      "findings": [
+        {
+          "actual_paise": 62400,
+          "delta_paise": 0,
+          "expected_paise": 62400,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 62400,
+          "delta_paise": 0,
+          "expected_paise": 62400,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 62400,
+          "delta_paise": 0,
+          "expected_paise": 62400,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 62400,
+          "delta_paise": 0,
+          "expected_paise": 62400,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100051",
+        "pay:PAY-500059",
+        "settle:SET-800053",
+        "bank:BANK-3000055"
+      ],
+      "reason_code": "INV_TIMING_OK",
+      "work_key": "ORD-100051"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000062",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000062"
+      ],
+      "findings": [
+        {
+          "actual_paise": 487700,
+          "delta_paise": 0,
+          "expected_paise": 487700,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 482285,
+          "delta_paise": 0,
+          "expected_paise": 482285,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 482285,
+          "delta_paise": 0,
+          "expected_paise": 482285,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 482285,
+          "delta_paise": -5415,
+          "expected_paise": 487700,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100058",
+        "pay:PAY-500065",
+        "settle:SET-800059",
+        "bank:BANK-3000062"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100058"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000066",
+      "checks_run": [],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000066"
+      ],
+      "findings": [
+        {
+          "actual_paise": 3653700,
+          "delta_paise": 0,
+          "expected_paise": 3653700,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 3653700,
+          "delta_paise": 0,
+          "expected_paise": 3653700,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 3653700,
+          "delta_paise": 0,
+          "expected_paise": 3653700,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 3653700,
+          "delta_paise": 0,
+          "expected_paise": 3653700,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100063",
+        "pay:PAY-500066",
+        "settle:SET-800064",
+        "bank:BANK-3000066"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100063"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000067",
+      "checks_run": [],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000067"
+      ],
+      "findings": [
+        {
+          "actual_paise": 294900,
+          "delta_paise": 0,
+          "expected_paise": 294900,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 294900,
+          "delta_paise": 0,
+          "expected_paise": 294900,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 294900,
+          "delta_paise": 0,
+          "expected_paise": 294900,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 294900,
+          "delta_paise": 0,
+          "expected_paise": 294900,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100073",
+        "pay:PAY-500068",
+        "settle:SET-800068",
+        "bank:BANK-3000067"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100073"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000073",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "genuine_discrepancy",
+      "evidence_ids": [
+        "SET-800074",
+        "BANK-3000073"
+      ],
+      "findings": [
+        {
+          "actual_paise": 4430600,
+          "delta_paise": 0,
+          "expected_paise": 4430600,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 4346714,
+          "delta_paise": 0,
+          "expected_paise": 4346714,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 3416314,
+          "delta_paise": -930400,
+          "expected_paise": 4346714,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 3416314,
+          "delta_paise": -1014286,
+          "expected_paise": 4430600,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100078",
+        "pay:PAY-500069",
+        "settle:SET-800074",
+        "bank:BANK-3000073"
+      ],
+      "reason_code": "INV_SHORT_FALL",
+      "work_key": "ORD-100078"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000087",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000087"
+      ],
+      "findings": [
+        {
+          "actual_paise": 63000,
+          "delta_paise": 0,
+          "expected_paise": 63000,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 62095,
+          "delta_paise": 0,
+          "expected_paise": 62095,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 62095,
+          "delta_paise": 0,
+          "expected_paise": 62095,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 62095,
+          "delta_paise": -905,
+          "expected_paise": 63000,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100098",
+        "pay:PAY-500082",
+        "settle:SET-800082",
+        "bank:BANK-3000087"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100098"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000096",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000096"
+      ],
+      "findings": [
+        {
+          "actual_paise": 2905900,
+          "delta_paise": 0,
+          "expected_paise": 2905900,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 2874803,
+          "delta_paise": 0,
+          "expected_paise": 2874803,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 2874803,
+          "delta_paise": 0,
+          "expected_paise": 2874803,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 2874803,
+          "delta_paise": -31097,
+          "expected_paise": 2905900,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100115",
+        "pay:PAY-500093",
+        "settle:SET-800095",
+        "bank:BANK-3000096"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100115"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000098",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000098"
+      ],
+      "findings": [
+        {
+          "actual_paise": 1378400,
+          "delta_paise": 0,
+          "expected_paise": 1378400,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 1345634,
+          "delta_paise": 0,
+          "expected_paise": 1345634,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 1345634,
+          "delta_paise": 0,
+          "expected_paise": 1345634,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 1345634,
+          "delta_paise": -32766,
+          "expected_paise": 1378400,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100119",
+        "pay:PAY-500095",
+        "settle:SET-800102",
+        "bank:BANK-3000098"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100119"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000104",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "ADJ-40006"
+      ],
+      "findings": [
+        {
+          "actual_paise": 1195800,
+          "delta_paise": 0,
+          "expected_paise": 1195800,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 1195800,
+          "delta_paise": 0,
+          "expected_paise": 1195800,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 917300,
+          "delta_paise": 0,
+          "expected_paise": 917300,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 917300,
+          "delta_paise": -278500,
+          "expected_paise": 1195800,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100125",
+        "pay:PAY-500102",
+        "settle:SET-800103",
+        "bank:BANK-3000103",
+        "bank:BANK-3000104",
+        "adj:ADJ-40006"
+      ],
+      "reason_code": "INV_REFUND_ADJ",
+      "work_key": "ORD-100125"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000110",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000110"
+      ],
+      "findings": [
+        {
+          "actual_paise": 2300000,
+          "delta_paise": 0,
+          "expected_paise": 2300000,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 2250558,
+          "delta_paise": 0,
+          "expected_paise": 2250558,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 2250558,
+          "delta_paise": 0,
+          "expected_paise": 2250558,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 2250558,
+          "delta_paise": -49442,
+          "expected_paise": 2300000,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100126",
+        "pay:PAY-500103",
+        "settle:SET-800108",
+        "bank:BANK-3000110"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100126"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000119",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "ADJ-40015"
+      ],
+      "findings": [
+        {
+          "actual_paise": 80700,
+          "delta_paise": 0,
+          "expected_paise": 80700,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 78941,
+          "delta_paise": 0,
+          "expected_paise": 78941,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 52341,
+          "delta_paise": 0,
+          "expected_paise": 52341,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 52341,
+          "delta_paise": -28359,
+          "expected_paise": 80700,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100130",
+        "pay:PAY-500111",
+        "settle:SET-800114",
+        "bank:BANK-3000113",
+        "bank:BANK-3000119",
+        "adj:ADJ-40015"
+      ],
+      "reason_code": "INV_REFUND_ADJ",
+      "work_key": "ORD-100130"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000131",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "PAY-500121"
+      ],
+      "findings": [
+        {
+          "actual_paise": 2378400,
+          "delta_paise": 0,
+          "expected_paise": 2378400,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -2322034,
+          "expected_paise": 2322034,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 2322034,
+          "delta_paise": 2322034,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 2322034,
+          "delta_paise": -56366,
+          "expected_paise": 2378400,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100143",
+        "pay:PAY-500121",
+        "bank:BANK-3000131"
+      ],
+      "reason_code": "INV_FEE_MATCH",
+      "work_key": "ORD-100143"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000137",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000137"
+      ],
+      "findings": [
+        {
+          "actual_paise": 15845900,
+          "delta_paise": 0,
+          "expected_paise": 15845900,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 15508743,
+          "delta_paise": 0,
+          "expected_paise": 15508743,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 15508743,
+          "delta_paise": 0,
+          "expected_paise": 15508743,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 15508743,
+          "delta_paise": -337157,
+          "expected_paise": 15845900,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100144",
+        "pay:PAY-500122",
+        "settle:SET-800117",
+        "bank:BANK-3000137"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100144"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000161",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "BANK-3000153",
+        "BANK-3000155",
+        "SET-800139",
+        "SET-800140"
+      ],
+      "findings": [
+        {
+          "actual_paise": 1467300,
+          "delta_paise": 0,
+          "expected_paise": 1467300,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 1435545,
+          "delta_paise": 0,
+          "expected_paise": 1435545,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 1435545,
+          "delta_paise": 0,
+          "expected_paise": 1435545,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 1435545,
+          "delta_paise": -31755,
+          "expected_paise": 1467300,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100172",
+        "pay:PAY-500142",
+        "settle:SET-800139",
+        "settle:SET-800140",
+        "settle:SET-800146",
+        "bank:BANK-3000153",
+        "bank:BANK-3000155",
+        "bank:BANK-3000161"
+      ],
+      "reason_code": "INV_SPLIT_COMBINE",
+      "work_key": "ORD-100172"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000168",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000168"
+      ],
+      "findings": [
+        {
+          "actual_paise": 189000,
+          "delta_paise": 0,
+          "expected_paise": 189000,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 186757,
+          "delta_paise": 0,
+          "expected_paise": 186757,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 186757,
+          "delta_paise": 0,
+          "expected_paise": 186757,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 186757,
+          "delta_paise": -2243,
+          "expected_paise": 189000,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100176",
+        "pay:PAY-500147",
+        "settle:SET-800149",
+        "bank:BANK-3000168"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100176"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000177",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "genuine_discrepancy",
+      "evidence_ids": [
+        "BANK-3000175",
+        "BANK-3000177"
+      ],
+      "findings": [
+        {
+          "actual_paise": 345000,
+          "delta_paise": 0,
+          "expected_paise": 345000,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 345000,
+          "delta_paise": 0,
+          "expected_paise": 345000,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 690100,
+          "delta_paise": 345100,
+          "expected_paise": 345000,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 690100,
+          "delta_paise": 345100,
+          "expected_paise": 345000,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100178",
+        "pay:PAY-500154",
+        "settle:SET-800150",
+        "bank:BANK-3000175",
+        "bank:BANK-3000177"
+      ],
+      "reason_code": "INV_DUPLICATE",
+      "work_key": "ORD-100178"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000182",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000182"
+      ],
+      "findings": [
+        {
+          "actual_paise": 131600,
+          "delta_paise": 0,
+          "expected_paise": 131600,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 128258,
+          "delta_paise": 0,
+          "expected_paise": 128258,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 128258,
+          "delta_paise": 0,
+          "expected_paise": 128258,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 128258,
+          "delta_paise": -3342,
+          "expected_paise": 131600,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100183",
+        "pay:PAY-500159",
+        "settle:SET-800151",
+        "bank:BANK-3000182"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100183"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000187",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000187"
+      ],
+      "findings": [
+        {
+          "actual_paise": 90200,
+          "delta_paise": 0,
+          "expected_paise": 90200,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 87694,
+          "delta_paise": 0,
+          "expected_paise": 87694,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 87694,
+          "delta_paise": 0,
+          "expected_paise": 87694,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 87694,
+          "delta_paise": -2506,
+          "expected_paise": 90200,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100188",
+        "pay:PAY-500163",
+        "settle:SET-800155",
+        "bank:BANK-3000187"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100188"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000189",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000189"
+      ],
+      "findings": [
+        {
+          "actual_paise": 3500600,
+          "delta_paise": 0,
+          "expected_paise": 3500600,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 3463188,
+          "delta_paise": 0,
+          "expected_paise": 3463188,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 3463188,
+          "delta_paise": 0,
+          "expected_paise": 3463188,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 3463188,
+          "delta_paise": -37412,
+          "expected_paise": 3500600,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100191",
+        "pay:PAY-500170",
+        "settle:SET-800159",
+        "bank:BANK-3000189"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100191"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000195",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "PAY-500177"
+      ],
+      "findings": [
+        {
+          "actual_paise": 151500,
+          "delta_paise": 0,
+          "expected_paise": 151500,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 149654,
+          "delta_paise": 0,
+          "expected_paise": 149654,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 149654,
+          "delta_paise": 0,
+          "expected_paise": 149654,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 149654,
+          "delta_paise": -1846,
+          "expected_paise": 151500,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100195",
+        "pay:PAY-500171",
+        "settle:SET-800161",
+        "bank:BANK-3000195"
+      ],
+      "reason_code": "INV_AMBIGUOUS_TWIN",
+      "work_key": "ORD-100195"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000201",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "genuine_discrepancy",
+      "evidence_ids": [
+        "BANK-3000201",
+        "BANK-3000205"
+      ],
+      "findings": [
+        {
+          "actual_paise": 2542700,
+          "delta_paise": 0,
+          "expected_paise": 2542700,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 2488103,
+          "delta_paise": 0,
+          "expected_paise": 2488103,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 4976206,
+          "delta_paise": 2488103,
+          "expected_paise": 2488103,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 4976206,
+          "delta_paise": 2433506,
+          "expected_paise": 2542700,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100207",
+        "pay:PAY-500187",
+        "settle:SET-800171",
+        "bank:BANK-3000201",
+        "bank:BANK-3000205"
+      ],
+      "reason_code": "INV_DUPLICATE",
+      "work_key": "ORD-100207"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000210",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "SET-800174"
+      ],
+      "findings": [
+        {
+          "actual_paise": 259400,
+          "delta_paise": 0,
+          "expected_paise": 259400,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 254267,
+          "delta_paise": 0,
+          "expected_paise": 254267,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 254267,
+          "delta_paise": 0,
+          "expected_paise": 254267,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 254267,
+          "delta_paise": -5133,
+          "expected_paise": 259400,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100210",
+        "pay:PAY-500188",
+        "settle:SET-800174",
+        "bank:BANK-3000210"
+      ],
+      "reason_code": "INV_TIMING_OK",
+      "work_key": "ORD-100210"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000222",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "ADJ-40019"
+      ],
+      "findings": [
+        {
+          "actual_paise": 270400,
+          "delta_paise": 0,
+          "expected_paise": 270400,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 267292,
+          "delta_paise": 0,
+          "expected_paise": 267292,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 200492,
+          "delta_paise": 0,
+          "expected_paise": 200492,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 200492,
+          "delta_paise": -69908,
+          "expected_paise": 270400,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100215",
+        "pay:PAY-500200",
+        "settle:SET-800180",
+        "bank:BANK-3000219",
+        "bank:BANK-3000222",
+        "adj:ADJ-40019"
+      ],
+      "reason_code": "INV_REFUND_ADJ",
+      "work_key": "ORD-100215"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000227",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000227"
+      ],
+      "findings": [
+        {
+          "actual_paise": 74800,
+          "delta_paise": 0,
+          "expected_paise": 74800,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 73152,
+          "delta_paise": 0,
+          "expected_paise": 73152,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 73152,
+          "delta_paise": 0,
+          "expected_paise": 73152,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 73152,
+          "delta_paise": -1648,
+          "expected_paise": 74800,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100221",
+        "pay:PAY-500207",
+        "settle:SET-800181",
+        "bank:BANK-3000227"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100221"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000232",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000232"
+      ],
+      "findings": [
+        {
+          "actual_paise": 2054600,
+          "delta_paise": 0,
+          "expected_paise": 2054600,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 2032545,
+          "delta_paise": 0,
+          "expected_paise": 2032545,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 2032545,
+          "delta_paise": 0,
+          "expected_paise": 2032545,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 2032545,
+          "delta_paise": -22055,
+          "expected_paise": 2054600,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100228",
+        "pay:PAY-500217",
+        "settle:SET-800187",
+        "bank:BANK-3000232"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100228"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000238",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "PAY-500218"
+      ],
+      "findings": [
+        {
+          "actual_paise": 4504800,
+          "delta_paise": 0,
+          "expected_paise": 4504800,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -4398251,
+          "expected_paise": 4398251,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 4398251,
+          "delta_paise": 4398251,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 4398251,
+          "delta_paise": -106549,
+          "expected_paise": 4504800,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100232",
+        "pay:PAY-500218",
+        "bank:BANK-3000238"
+      ],
+      "reason_code": "INV_FEE_MATCH",
+      "work_key": "ORD-100232"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000247",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000247"
+      ],
+      "findings": [
+        {
+          "actual_paise": 293400,
+          "delta_paise": 0,
+          "expected_paise": 293400,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 287625,
+          "delta_paise": 0,
+          "expected_paise": 287625,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 287625,
+          "delta_paise": 0,
+          "expected_paise": 287625,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 287625,
+          "delta_paise": -5775,
+          "expected_paise": 293400,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100239",
+        "pay:PAY-500226",
+        "settle:SET-800197",
+        "bank:BANK-3000247"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100239"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000253",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "PAY-500227"
+      ],
+      "findings": [
+        {
+          "actual_paise": 163400,
+          "delta_paise": 0,
+          "expected_paise": 163400,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -159340,
+          "expected_paise": 159340,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 159340,
+          "delta_paise": 159340,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 159340,
+          "delta_paise": -4060,
+          "expected_paise": 163400,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100246",
+        "pay:PAY-500227",
+        "bank:BANK-3000253"
+      ],
+      "reason_code": "INV_FEE_MATCH",
+      "work_key": "ORD-100246"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000261",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000261"
+      ],
+      "findings": [
+        {
+          "actual_paise": 2845700,
+          "delta_paise": 0,
+          "expected_paise": 2845700,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 2784667,
+          "delta_paise": 0,
+          "expected_paise": 2784667,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 2784667,
+          "delta_paise": 0,
+          "expected_paise": 2784667,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 2784667,
+          "delta_paise": -61033,
+          "expected_paise": 2845700,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100269",
+        "pay:PAY-500245",
+        "settle:SET-800204",
+        "bank:BANK-3000261"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100269"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000265",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "BANK-3000263",
+        "BANK-3000265",
+        "SET-800211",
+        "SET-800216"
+      ],
+      "findings": [
+        {
+          "actual_paise": 80300,
+          "delta_paise": 0,
+          "expected_paise": 80300,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 78548,
+          "delta_paise": 0,
+          "expected_paise": 78548,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 78548,
+          "delta_paise": 0,
+          "expected_paise": 78548,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 78548,
+          "delta_paise": -1752,
+          "expected_paise": 80300,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100275",
+        "pay:PAY-500250",
+        "settle:SET-800211",
+        "settle:SET-800216",
+        "bank:BANK-3000263",
+        "bank:BANK-3000265"
+      ],
+      "reason_code": "INV_SPLIT_COMBINE",
+      "work_key": "ORD-100275"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000271",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000271"
+      ],
+      "findings": [
+        {
+          "actual_paise": 140900,
+          "delta_paise": 0,
+          "expected_paise": 140900,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 138004,
+          "delta_paise": 0,
+          "expected_paise": 138004,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 138004,
+          "delta_paise": 0,
+          "expected_paise": 138004,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 138004,
+          "delta_paise": -2896,
+          "expected_paise": 140900,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100278",
+        "pay:PAY-500251",
+        "settle:SET-800217",
+        "bank:BANK-3000271"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100278"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000273",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "PAY-500258"
+      ],
+      "findings": [
+        {
+          "actual_paise": 235200,
+          "delta_paise": 0,
+          "expected_paise": 235200,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -229413,
+          "expected_paise": 229413,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 229413,
+          "delta_paise": 229413,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 229413,
+          "delta_paise": -5787,
+          "expected_paise": 235200,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100283",
+        "pay:PAY-500258",
+        "bank:BANK-3000273"
+      ],
+      "reason_code": "INV_FEE_MATCH",
+      "work_key": "ORD-100283"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000279",
+      "checks_run": [],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000279"
+      ],
+      "findings": [
+        {
+          "actual_paise": 152500,
+          "delta_paise": 0,
+          "expected_paise": 152500,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 152500,
+          "delta_paise": 0,
+          "expected_paise": 152500,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 152500,
+          "delta_paise": 0,
+          "expected_paise": 152500,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 152500,
+          "delta_paise": 0,
+          "expected_paise": 152500,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100288",
+        "pay:PAY-500264",
+        "settle:SET-800220",
+        "bank:BANK-3000279"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100288"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000281",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "PAY-500271"
+      ],
+      "findings": [
+        {
+          "actual_paise": 3417300,
+          "delta_paise": 0,
+          "expected_paise": 3417300,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -3344127,
+          "expected_paise": 3344127,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 3344127,
+          "delta_paise": 3344127,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 3344127,
+          "delta_paise": -73173,
+          "expected_paise": 3417300,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100291",
+        "pay:PAY-500271",
+        "bank:BANK-3000281"
+      ],
+      "reason_code": "INV_FEE_MATCH",
+      "work_key": "ORD-100291"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000287",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "BANK-3000282",
+        "BANK-3000287",
+        "SET-800226",
+        "SET-800230"
+      ],
+      "findings": [
+        {
+          "actual_paise": 111700,
+          "delta_paise": 0,
+          "expected_paise": 111700,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 111700,
+          "delta_paise": 0,
+          "expected_paise": 111700,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 111700,
+          "delta_paise": 0,
+          "expected_paise": 111700,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 111700,
+          "delta_paise": 0,
+          "expected_paise": 111700,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100295",
+        "pay:PAY-500274",
+        "settle:SET-800226",
+        "settle:SET-800230",
+        "bank:BANK-3000282",
+        "bank:BANK-3000287"
+      ],
+      "reason_code": "INV_SPLIT_COMBINE",
+      "work_key": "ORD-100295"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000300",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000300"
+      ],
+      "findings": [
+        {
+          "actual_paise": 272600,
+          "delta_paise": 0,
+          "expected_paise": 272600,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 269469,
+          "delta_paise": 0,
+          "expected_paise": 269469,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 269469,
+          "delta_paise": 0,
+          "expected_paise": 269469,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 269469,
+          "delta_paise": -3131,
+          "expected_paise": 272600,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100315",
+        "pay:PAY-500288",
+        "settle:SET-800245",
+        "bank:BANK-3000300"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100315"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000305",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "BANK-3000303",
+        "BANK-3000305",
+        "SET-800246",
+        "SET-800250"
+      ],
+      "findings": [
+        {
+          "actual_paise": 499900,
+          "delta_paise": 0,
+          "expected_paise": 499900,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 488692,
+          "delta_paise": 0,
+          "expected_paise": 488692,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 488692,
+          "delta_paise": 0,
+          "expected_paise": 488692,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 488692,
+          "delta_paise": -11208,
+          "expected_paise": 499900,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100317",
+        "pay:PAY-500293",
+        "settle:SET-800246",
+        "settle:SET-800250",
+        "bank:BANK-3000303",
+        "bank:BANK-3000305"
+      ],
+      "reason_code": "INV_SPLIT_COMBINE",
+      "work_key": "ORD-100317"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000315",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "genuine_discrepancy",
+      "evidence_ids": [
+        "BANK-3000315"
+      ],
+      "findings": [
+        {
+          "actual_paise": 289100,
+          "delta_paise": 289100,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "bank:BANK-3000315"
+      ],
+      "reason_code": "INV_UNMATCHED_INFLOW",
+      "work_key": "BANK-3000315"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000319",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "genuine_discrepancy",
+      "evidence_ids": [
+        "BANK-3000319"
+      ],
+      "findings": [
+        {
+          "actual_paise": 142300,
+          "delta_paise": 142300,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "bank:BANK-3000319"
+      ],
+      "reason_code": "INV_UNMATCHED_INFLOW",
+      "work_key": "BANK-3000319"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000325",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": -25900,
+          "delta_paise": -25900,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "bank:BANK-3000325"
+      ],
+      "reason_code": "",
+      "work_key": "BANK-3000325"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000328",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": -20200,
+          "delta_paise": -20200,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "bank:BANK-3000328"
+      ],
+      "reason_code": "",
+      "work_key": "BANK-3000328"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000330",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": -41500,
+          "delta_paise": -41500,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "bank:BANK-3000330"
+      ],
+      "reason_code": "",
+      "work_key": "BANK-3000330"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000337",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": -10000,
+          "delta_paise": -10000,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "bank:BANK-3000337"
+      ],
+      "reason_code": "",
+      "work_key": "BANK-3000337"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000342",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": -35900,
+          "delta_paise": -35900,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "bank:BANK-3000342"
+      ],
+      "reason_code": "",
+      "work_key": "BANK-3000342"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000345",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": -43300,
+          "delta_paise": -43300,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "bank:BANK-3000345"
+      ],
+      "reason_code": "",
+      "work_key": "BANK-3000345"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000349",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": -28900,
+          "delta_paise": -28900,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "bank:BANK-3000349"
+      ],
+      "reason_code": "",
+      "work_key": "BANK-3000349"
+    },
+    {
+      "bundle_bid": "bank:BANK-3000352",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": -22800,
+          "delta_paise": -22800,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "bank:BANK-3000352"
+      ],
+      "reason_code": "",
+      "work_key": "BANK-3000352"
+    },
+    {
+      "bundle_bid": "order:ORD-100350",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": 0,
+          "delta_paise": -3353000,
+          "expected_paise": 3353000,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -3353000,
+          "expected_paise": 3353000,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100350"
+      ],
+      "reason_code": "",
+      "work_key": "ORD-100350"
+    },
+    {
+      "bundle_bid": "order:ORD-100357",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": 0,
+          "delta_paise": -78000,
+          "expected_paise": 78000,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -78000,
+          "expected_paise": 78000,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100357"
+      ],
+      "reason_code": "",
+      "work_key": "ORD-100357"
+    },
+    {
+      "bundle_bid": "order:ORD-100358",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": 0,
+          "delta_paise": -15067600,
+          "expected_paise": 15067600,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -15067600,
+          "expected_paise": 15067600,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100358"
+      ],
+      "reason_code": "",
+      "work_key": "ORD-100358"
+    },
+    {
+      "bundle_bid": "order:ORD-100362",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": 0,
+          "delta_paise": -429900,
+          "expected_paise": 429900,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -429900,
+          "expected_paise": 429900,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100362"
+      ],
+      "reason_code": "",
+      "work_key": "ORD-100362"
+    },
+    {
+      "bundle_bid": "pay:PAY-500012",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": 62163,
+          "delta_paise": 0,
+          "expected_paise": 62163,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -62163,
+          "expected_paise": 62163,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        }
+      ],
+      "internal_status": "orphan_chain",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "pay:PAY-500012",
+        "settle:SET-800012"
+      ],
+      "reason_code": "",
+      "work_key": "PAY-500012"
+    },
+    {
+      "bundle_bid": "pay:PAY-500023",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "SET-800021"
+      ],
+      "findings": [
+        {
+          "actual_paise": 331800,
+          "delta_paise": 0,
+          "expected_paise": 331800,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 323734,
+          "delta_paise": 0,
+          "expected_paise": 323734,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 323734,
+          "delta_paise": 0,
+          "expected_paise": 323734,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 323734,
+          "delta_paise": -8066,
+          "expected_paise": 331800,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100012",
+        "pay:PAY-500023",
+        "settle:SET-800021",
+        "bank:BANK-3000014"
+      ],
+      "reason_code": "INV_TIMING_OK",
+      "work_key": "ORD-100012"
+    },
+    {
+      "bundle_bid": "pay:PAY-500053",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "genuine_discrepancy",
+      "evidence_ids": [
+        "SET-800050"
+      ],
+      "findings": [
+        {
+          "actual_paise": 490100,
+          "delta_paise": 0,
+          "expected_paise": 490100,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 484659,
+          "delta_paise": 0,
+          "expected_paise": 484659,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -484659,
+          "expected_paise": 484659,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -490100,
+          "expected_paise": 490100,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100047",
+        "pay:PAY-500053",
+        "settle:SET-800050"
+      ],
+      "reason_code": "INV_SHORT_FALL",
+      "work_key": "ORD-100047"
+    },
+    {
+      "bundle_bid": "pay:PAY-500067",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "unresolved",
+      "evidence_ids": [
+        "PAY-500067"
+      ],
+      "findings": [
+        {
+          "actual_paise": 458000,
+          "delta_paise": 0,
+          "expected_paise": 458000,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -458000,
+          "expected_paise": 458000,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -458000,
+          "expected_paise": 458000,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100066",
+        "pay:PAY-500067"
+      ],
+      "reason_code": "INV_EXHAUSTIVE_NO_EVIDENCE",
+      "work_key": "ORD-100066"
+    },
+    {
+      "bundle_bid": "pay:PAY-500072",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "ADJ-40001"
+      ],
+      "findings": [
+        {
+          "actual_paise": 355000,
+          "delta_paise": 0,
+          "expected_paise": 355000,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -355000,
+          "expected_paise": 355000,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 355000,
+          "expected_paise": -355000,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -355000,
+          "expected_paise": 355000,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100084",
+        "pay:PAY-500072",
+        "adj:ADJ-40001"
+      ],
+      "reason_code": "INV_REFUND_ADJ",
+      "work_key": "ORD-100084"
+    },
+    {
+      "bundle_bid": "pay:PAY-500077",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "unresolved",
+      "evidence_ids": [
+        "PAY-500077"
+      ],
+      "findings": [
+        {
+          "actual_paise": 4660700,
+          "delta_paise": 0,
+          "expected_paise": 4660700,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -4660700,
+          "expected_paise": 4660700,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -4660700,
+          "expected_paise": 4660700,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100091",
+        "pay:PAY-500077"
+      ],
+      "reason_code": "INV_EXHAUSTIVE_NO_EVIDENCE",
+      "work_key": "ORD-100091"
+    },
+    {
+      "bundle_bid": "pay:PAY-500079",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "unresolved",
+      "evidence_ids": [
+        "PAY-500079"
+      ],
+      "findings": [
+        {
+          "actual_paise": 277600,
+          "delta_paise": 0,
+          "expected_paise": 277600,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 272122,
+          "delta_paise": 0,
+          "expected_paise": 272122,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 246422,
+          "delta_paise": -25700,
+          "expected_paise": 272122,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 246422,
+          "delta_paise": -31178,
+          "expected_paise": 277600,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100092",
+        "pay:PAY-500079",
+        "settle:SET-800078",
+        "bank:BANK-3000080"
+      ],
+      "reason_code": "INV_EXHAUSTIVE_NO_EVIDENCE",
+      "work_key": "ORD-100092"
+    },
+    {
+      "bundle_bid": "pay:PAY-500087",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000090"
+      ],
+      "findings": [
+        {
+          "actual_paise": 86600,
+          "delta_paise": 0,
+          "expected_paise": 86600,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 84170,
+          "delta_paise": 0,
+          "expected_paise": 84170,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 84170,
+          "delta_paise": 0,
+          "expected_paise": 84170,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 84170,
+          "delta_paise": -2430,
+          "expected_paise": 86600,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100105",
+        "pay:PAY-500087",
+        "settle:SET-800089",
+        "bank:BANK-3000090"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100105"
+    },
+    {
+      "bundle_bid": "pay:PAY-500088",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000092"
+      ],
+      "findings": [
+        {
+          "actual_paise": 1007700,
+          "delta_paise": 0,
+          "expected_paise": 1007700,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 983682,
+          "delta_paise": 0,
+          "expected_paise": 983682,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 983682,
+          "delta_paise": 0,
+          "expected_paise": 983682,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 983682,
+          "delta_paise": -24018,
+          "expected_paise": 1007700,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100108",
+        "pay:PAY-500088",
+        "settle:SET-800090",
+        "bank:BANK-3000092"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100108"
+    },
+    {
+      "bundle_bid": "pay:PAY-500106",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "ADJ-40012"
+      ],
+      "findings": [
+        {
+          "actual_paise": 433200,
+          "delta_paise": 0,
+          "expected_paise": 433200,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -428363,
+          "expected_paise": 428363,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 433200,
+          "expected_paise": -433200,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -433200,
+          "expected_paise": 433200,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100129",
+        "pay:PAY-500106",
+        "adj:ADJ-40012"
+      ],
+      "reason_code": "INV_REFUND_ADJ",
+      "work_key": "ORD-100129"
+    },
+    {
+      "bundle_bid": "pay:PAY-500117",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000125"
+      ],
+      "findings": [
+        {
+          "actual_paise": 468300,
+          "delta_paise": 0,
+          "expected_paise": 468300,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 463090,
+          "delta_paise": 0,
+          "expected_paise": 463090,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 463090,
+          "delta_paise": 0,
+          "expected_paise": 463090,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 463090,
+          "delta_paise": -5210,
+          "expected_paise": 468300,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100136",
+        "pay:PAY-500117",
+        "settle:SET-800115",
+        "bank:BANK-3000125"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100136"
+    },
+    {
+      "bundle_bid": "pay:PAY-500138",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "BANK-3000144"
+      ],
+      "findings": [
+        {
+          "actual_paise": 2741300,
+          "delta_paise": 0,
+          "expected_paise": 2741300,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 2715882,
+          "delta_paise": 0,
+          "expected_paise": 2715882,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 2715882,
+          "delta_paise": 0,
+          "expected_paise": 2715882,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 2715882,
+          "delta_paise": -25418,
+          "expected_paise": 2741300,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100146",
+        "order:ORD-100153",
+        "order:ORD-100158",
+        "order:ORD-100160",
+        "pay:PAY-500126",
+        "pay:PAY-500131",
+        "pay:PAY-500133",
+        "pay:PAY-500138",
+        "settle:SET-800122",
+        "settle:SET-800124",
+        "settle:SET-800127",
+        "settle:SET-800128",
+        "bank:BANK-3000144"
+      ],
+      "reason_code": "INV_SPLIT_COMBINE",
+      "work_key": "ORD-100146"
+    },
+    {
+      "bundle_bid": "pay:PAY-500138",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "BANK-3000144"
+      ],
+      "findings": [
+        {
+          "actual_paise": 2741300,
+          "delta_paise": 0,
+          "expected_paise": 2741300,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 2715882,
+          "delta_paise": 0,
+          "expected_paise": 2715882,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 2715882,
+          "delta_paise": 0,
+          "expected_paise": 2715882,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 2715882,
+          "delta_paise": -25418,
+          "expected_paise": 2741300,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100146",
+        "order:ORD-100153",
+        "order:ORD-100158",
+        "order:ORD-100160",
+        "pay:PAY-500126",
+        "pay:PAY-500131",
+        "pay:PAY-500133",
+        "pay:PAY-500138",
+        "settle:SET-800122",
+        "settle:SET-800124",
+        "settle:SET-800127",
+        "settle:SET-800128",
+        "bank:BANK-3000144"
+      ],
+      "reason_code": "INV_SPLIT_COMBINE",
+      "work_key": "ORD-100153"
+    },
+    {
+      "bundle_bid": "pay:PAY-500138",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "BANK-3000144"
+      ],
+      "findings": [
+        {
+          "actual_paise": 2741300,
+          "delta_paise": 0,
+          "expected_paise": 2741300,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 2715882,
+          "delta_paise": 0,
+          "expected_paise": 2715882,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 2715882,
+          "delta_paise": 0,
+          "expected_paise": 2715882,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 2715882,
+          "delta_paise": -25418,
+          "expected_paise": 2741300,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100146",
+        "order:ORD-100153",
+        "order:ORD-100158",
+        "order:ORD-100160",
+        "pay:PAY-500126",
+        "pay:PAY-500131",
+        "pay:PAY-500133",
+        "pay:PAY-500138",
+        "settle:SET-800122",
+        "settle:SET-800124",
+        "settle:SET-800127",
+        "settle:SET-800128",
+        "bank:BANK-3000144"
+      ],
+      "reason_code": "INV_SPLIT_COMBINE",
+      "work_key": "ORD-100158"
+    },
+    {
+      "bundle_bid": "pay:PAY-500138",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "BANK-3000144"
+      ],
+      "findings": [
+        {
+          "actual_paise": 2741300,
+          "delta_paise": 0,
+          "expected_paise": 2741300,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 2715882,
+          "delta_paise": 0,
+          "expected_paise": 2715882,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 2715882,
+          "delta_paise": 0,
+          "expected_paise": 2715882,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 2715882,
+          "delta_paise": -25418,
+          "expected_paise": 2741300,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100146",
+        "order:ORD-100153",
+        "order:ORD-100158",
+        "order:ORD-100160",
+        "pay:PAY-500126",
+        "pay:PAY-500131",
+        "pay:PAY-500133",
+        "pay:PAY-500138",
+        "settle:SET-800122",
+        "settle:SET-800124",
+        "settle:SET-800127",
+        "settle:SET-800128",
+        "bank:BANK-3000144"
+      ],
+      "reason_code": "INV_SPLIT_COMBINE",
+      "work_key": "ORD-100160"
+    },
+    {
+      "bundle_bid": "pay:PAY-500139",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "unresolved",
+      "evidence_ids": [
+        "PAY-500139"
+      ],
+      "findings": [
+        {
+          "actual_paise": 173200,
+          "delta_paise": 0,
+          "expected_paise": 173200,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 168931,
+          "delta_paise": 0,
+          "expected_paise": 168931,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 161531,
+          "delta_paise": -7400,
+          "expected_paise": 168931,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 161531,
+          "delta_paise": -11669,
+          "expected_paise": 173200,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100165",
+        "pay:PAY-500139",
+        "settle:SET-800132",
+        "bank:BANK-3000146"
+      ],
+      "reason_code": "INV_EXHAUSTIVE_NO_EVIDENCE",
+      "work_key": "ORD-100165"
+    },
+    {
+      "bundle_bid": "pay:PAY-500177",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": 147689,
+          "delta_paise": 0,
+          "expected_paise": 147689,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -147689,
+          "expected_paise": 147689,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        }
+      ],
+      "internal_status": "orphan_chain",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "pay:PAY-500177",
+        "settle:SET-800164"
+      ],
+      "reason_code": "",
+      "work_key": "PAY-500177"
+    },
+    {
+      "bundle_bid": "pay:PAY-500182",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000196"
+      ],
+      "findings": [
+        {
+          "actual_paise": 465600,
+          "delta_paise": 0,
+          "expected_paise": 465600,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 455120,
+          "delta_paise": 0,
+          "expected_paise": 455120,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 455120,
+          "delta_paise": 0,
+          "expected_paise": 455120,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 455120,
+          "delta_paise": -10480,
+          "expected_paise": 465600,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100201",
+        "pay:PAY-500182",
+        "settle:SET-800170",
+        "bank:BANK-3000196"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100201"
+    },
+    {
+      "bundle_bid": "pay:PAY-500193",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000214"
+      ],
+      "findings": [
+        {
+          "actual_paise": 24019300,
+          "delta_paise": 0,
+          "expected_paise": 24019300,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 23508541,
+          "delta_paise": 0,
+          "expected_paise": 23508541,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 23508541,
+          "delta_paise": 0,
+          "expected_paise": 23508541,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 23508541,
+          "delta_paise": -510759,
+          "expected_paise": 24019300,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100211",
+        "pay:PAY-500193",
+        "settle:SET-800177",
+        "bank:BANK-3000214"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100211"
+    },
+    {
+      "bundle_bid": "pay:PAY-500212",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "data_quality",
+      "evidence_ids": [
+        "PAY-500212"
+      ],
+      "findings": [
+        {
+          "actual_paise": 0,
+          "delta_paise": -120000,
+          "expected_paise": 120000,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -120000,
+          "expected_paise": 120000,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100223",
+        "pay:PAY-500212"
+      ],
+      "reason_code": "DQ_NULL_AMOUNT",
+      "work_key": "ORD-100223"
+    },
+    {
+      "bundle_bid": "pay:PAY-500221",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched",
+      "evidence_ids": [
+        "BANK-3000240"
+      ],
+      "findings": [
+        {
+          "actual_paise": 324500,
+          "delta_paise": 0,
+          "expected_paise": 324500,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 318137,
+          "delta_paise": 0,
+          "expected_paise": 318137,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 318137,
+          "delta_paise": 0,
+          "expected_paise": 318137,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 318137,
+          "delta_paise": -6363,
+          "expected_paise": 324500,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100234",
+        "pay:PAY-500221",
+        "settle:SET-800192",
+        "bank:BANK-3000240"
+      ],
+      "reason_code": "REC_ZERO_DELTA",
+      "work_key": "ORD-100234"
+    },
+    {
+      "bundle_bid": "pay:PAY-500231",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "unresolved",
+      "evidence_ids": [
+        "PAY-500231"
+      ],
+      "findings": [
+        {
+          "actual_paise": 1418600,
+          "delta_paise": 0,
+          "expected_paise": 1418600,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -1384885,
+          "expected_paise": 1384885,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -1418600,
+          "expected_paise": 1418600,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100249",
+        "pay:PAY-500231"
+      ],
+      "reason_code": "INV_EXHAUSTIVE_NO_EVIDENCE",
+      "work_key": "ORD-100249"
+    },
+    {
+      "bundle_bid": "pay:PAY-500241",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "BANK-3000256"
+      ],
+      "findings": [
+        {
+          "actual_paise": 269400,
+          "delta_paise": 0,
+          "expected_paise": 269400,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 266066,
+          "delta_paise": 0,
+          "expected_paise": 266066,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 266066,
+          "delta_paise": 0,
+          "expected_paise": 266066,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 266066,
+          "delta_paise": -3334,
+          "expected_paise": 269400,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100256",
+        "order:ORD-100262",
+        "pay:PAY-500238",
+        "pay:PAY-500241",
+        "settle:SET-800198",
+        "settle:SET-800199",
+        "bank:BANK-3000256"
+      ],
+      "reason_code": "INV_SPLIT_COMBINE",
+      "work_key": "ORD-100256"
+    },
+    {
+      "bundle_bid": "pay:PAY-500241",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "BANK-3000256"
+      ],
+      "findings": [
+        {
+          "actual_paise": 269400,
+          "delta_paise": 0,
+          "expected_paise": 269400,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 266066,
+          "delta_paise": 0,
+          "expected_paise": 266066,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 266066,
+          "delta_paise": 0,
+          "expected_paise": 266066,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 266066,
+          "delta_paise": -3334,
+          "expected_paise": 269400,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100256",
+        "order:ORD-100262",
+        "pay:PAY-500238",
+        "pay:PAY-500241",
+        "settle:SET-800198",
+        "settle:SET-800199",
+        "bank:BANK-3000256"
+      ],
+      "reason_code": "INV_SPLIT_COMBINE",
+      "work_key": "ORD-100262"
+    },
+    {
+      "bundle_bid": "pay:PAY-500247",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "unresolved",
+      "evidence_ids": [
+        "PAY-500247"
+      ],
+      "findings": [
+        {
+          "actual_paise": 250800,
+          "delta_paise": 0,
+          "expected_paise": 250800,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -250800,
+          "expected_paise": 250800,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -250800,
+          "expected_paise": 250800,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100270",
+        "pay:PAY-500247"
+      ],
+      "reason_code": "INV_EXHAUSTIVE_NO_EVIDENCE",
+      "work_key": "ORD-100270"
+    },
+    {
+      "bundle_bid": "pay:PAY-500283",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "BANK-3000294"
+      ],
+      "findings": [
+        {
+          "actual_paise": 7711000,
+          "delta_paise": 0,
+          "expected_paise": 7711000,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 7533960,
+          "delta_paise": 0,
+          "expected_paise": 7533960,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 7533960,
+          "delta_paise": 0,
+          "expected_paise": 7533960,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 7533960,
+          "delta_paise": -177040,
+          "expected_paise": 7711000,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100302",
+        "order:ORD-100306",
+        "order:ORD-100308",
+        "pay:PAY-500280",
+        "pay:PAY-500283",
+        "pay:PAY-500287",
+        "settle:SET-800237",
+        "settle:SET-800238",
+        "settle:SET-800239",
+        "bank:BANK-3000294"
+      ],
+      "reason_code": "INV_SPLIT_COMBINE",
+      "work_key": "ORD-100302"
+    },
+    {
+      "bundle_bid": "pay:PAY-500283",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "BANK-3000294"
+      ],
+      "findings": [
+        {
+          "actual_paise": 7711000,
+          "delta_paise": 0,
+          "expected_paise": 7711000,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 7533960,
+          "delta_paise": 0,
+          "expected_paise": 7533960,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 7533960,
+          "delta_paise": 0,
+          "expected_paise": 7533960,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 7533960,
+          "delta_paise": -177040,
+          "expected_paise": 7711000,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100302",
+        "order:ORD-100306",
+        "order:ORD-100308",
+        "pay:PAY-500280",
+        "pay:PAY-500283",
+        "pay:PAY-500287",
+        "settle:SET-800237",
+        "settle:SET-800238",
+        "settle:SET-800239",
+        "bank:BANK-3000294"
+      ],
+      "reason_code": "INV_SPLIT_COMBINE",
+      "work_key": "ORD-100306"
+    },
+    {
+      "bundle_bid": "pay:PAY-500283",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "BANK-3000294"
+      ],
+      "findings": [
+        {
+          "actual_paise": 7711000,
+          "delta_paise": 0,
+          "expected_paise": 7711000,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 7533960,
+          "delta_paise": 0,
+          "expected_paise": 7533960,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 7533960,
+          "delta_paise": 0,
+          "expected_paise": 7533960,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 7533960,
+          "delta_paise": -177040,
+          "expected_paise": 7711000,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100302",
+        "order:ORD-100306",
+        "order:ORD-100308",
+        "pay:PAY-500280",
+        "pay:PAY-500283",
+        "pay:PAY-500287",
+        "settle:SET-800237",
+        "settle:SET-800238",
+        "settle:SET-800239",
+        "bank:BANK-3000294"
+      ],
+      "reason_code": "INV_SPLIT_COMBINE",
+      "work_key": "ORD-100308"
+    },
+    {
+      "bundle_bid": "pay:PAY-500297",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "matched_after_reasoning",
+      "evidence_ids": [
+        "PAY-500297"
+      ],
+      "findings": [
+        {
+          "actual_paise": 236100,
+          "delta_paise": 0,
+          "expected_paise": 236100,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -230495,
+          "expected_paise": 230495,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 230495,
+          "delta_paise": 230495,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 230495,
+          "delta_paise": -5605,
+          "expected_paise": 236100,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": null,
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100322",
+        "pay:PAY-500297",
+        "bank:BANK-3000312"
+      ],
+      "reason_code": "INV_FEE_MATCH",
+      "work_key": "ORD-100322"
+    },
+    {
+      "bundle_bid": "pay:PAY-500302",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": 0,
+          "delta_paise": -243900,
+          "expected_paise": 243900,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -243900,
+          "expected_paise": 243900,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100325",
+        "pay:PAY-500302"
+      ],
+      "reason_code": "",
+      "work_key": "ORD-100325"
+    },
+    {
+      "bundle_bid": "pay:PAY-500304",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": 0,
+          "delta_paise": -1798500,
+          "expected_paise": 1798500,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -1798500,
+          "expected_paise": 1798500,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100329",
+        "pay:PAY-500304"
+      ],
+      "reason_code": "",
+      "work_key": "ORD-100329"
+    },
+    {
+      "bundle_bid": "pay:PAY-500308",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": 0,
+          "delta_paise": -1885600,
+          "expected_paise": 1885600,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -1885600,
+          "expected_paise": 1885600,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100332",
+        "pay:PAY-500308"
+      ],
+      "reason_code": "",
+      "work_key": "ORD-100332"
+    },
+    {
+      "bundle_bid": "pay:PAY-500312",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": 0,
+          "delta_paise": -298500,
+          "expected_paise": 298500,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -298500,
+          "expected_paise": 298500,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100336",
+        "pay:PAY-500312"
+      ],
+      "reason_code": "",
+      "work_key": "ORD-100336"
+    },
+    {
+      "bundle_bid": "pay:PAY-500318",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": 0,
+          "delta_paise": -272300,
+          "expected_paise": 272300,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -272300,
+          "expected_paise": 272300,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100341",
+        "pay:PAY-500318"
+      ],
+      "reason_code": "",
+      "work_key": "ORD-100341"
+    },
+    {
+      "bundle_bid": "pay:PAY-500322",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": 0,
+          "delta_paise": -252400,
+          "expected_paise": 252400,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -252400,
+          "expected_paise": 252400,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100344",
+        "pay:PAY-500322"
+      ],
+      "reason_code": "",
+      "work_key": "ORD-100344"
+    },
+    {
+      "bundle_bid": "pay:PAY-500326",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": 0,
+          "delta_paise": -442800,
+          "expected_paise": 442800,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -442800,
+          "expected_paise": 442800,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100346",
+        "pay:PAY-500326"
+      ],
+      "reason_code": "",
+      "work_key": "ORD-100346"
+    },
+    {
+      "bundle_bid": "pay:PAY-500327",
+      "checks_run": [
+        "FEE_SCHEDULE_MATCH",
+        "REFUND_ADJUSTMENT_LOOKUP",
+        "SPLIT_COMBINE_TEST",
+        "DUPLICATE_SCAN",
+        "TIMING_WINDOW",
+        "LEG_ATTRIBUTION",
+        "AMBIGUOUS_TWIN_SCAN",
+        "EXHAUSTIVE_SEARCH"
+      ],
+      "cls": "",
+      "evidence_ids": [],
+      "findings": [
+        {
+          "actual_paise": 0,
+          "delta_paise": -412600,
+          "expected_paise": 412600,
+          "kind": "PAY_VS_ORDER"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "SETTLE_NET_VS_EXPECTED"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": 0,
+          "expected_paise": 0,
+          "kind": "BANK_VS_NET_MINUS_ADJ"
+        },
+        {
+          "actual_paise": 0,
+          "delta_paise": -412600,
+          "expected_paise": 412600,
+          "kind": "NAIVE_BANK_VS_ORDER"
+        }
+      ],
+      "internal_status": "ignored_noise",
+      "llm_assists": [
+        {
+          "assist": "null_assist"
+        }
+      ],
+      "members": [
+        "order:ORD-100347",
+        "pay:PAY-500327"
+      ],
+      "reason_code": "",
+      "work_key": "ORD-100347"
+    }
+  ]
+}
