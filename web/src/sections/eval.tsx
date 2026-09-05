@@ -4,30 +4,14 @@ import { MetricRadarChart, MetricBarsChart } from "@/components/eval-charts";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
-
-interface EvalRow {
-  batch: string;
-  difficulty?: string;
-  transactions?: number | null;
-  match_rate?: number;
-  root_cause_accuracy?: number;
-  abstention_precision?: number;
-  abstention_recall?: number;
-  unsupported_resolution_rate?: number;
-  evidence_precision?: number;
-  evidence_recall?: number;
-  trap_breakdown?: Record<string, number>;
-  failed_cases?: { work_key: string; cause: string; expected_class: string; predicted_class: string }[];
-  memory?: { grounded?: { n: number; rate: number | null }; retrieval?: { hit_at_1: number | null } };
-}
+import { api, type EvalRow } from "@/lib/api";
 
 export function Eval() {
   const [rows, setRows] = useState<EvalRow[] | null>(null);
   const [err, setErr] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/api/batches/eval-report")
-      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+    api.evalReport()
       .then((d) => setRows(d.batches))
       .catch((e) => setErr(String(e)));
   }, []);

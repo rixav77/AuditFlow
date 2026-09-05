@@ -67,7 +67,28 @@ export interface ChatEvent {
   latency_ms?: number;
 }
 
-async function j<T>(url: string): Promise<T> {
+export interface EvalRow {
+  batch: string;
+  difficulty?: string;
+  transactions?: number | null;
+  match_rate?: number;
+  root_cause_accuracy?: number;
+  abstention_precision?: number;
+  abstention_recall?: number;
+  unsupported_resolution_rate?: number;
+  evidence_precision?: number;
+  evidence_recall?: number;
+  trap_breakdown?: Record<string, number>;
+  failed_cases?: { work_key: string; cause: string; expected_class: string; predicted_class: string }[];
+  memory?: { grounded?: { n: number; rate: number | null }; retrieval?: { hit_at_1: number | null } };
+}
+
+const API_BASE = (
+  (typeof import.meta !== "undefined" && (import.meta as unknown as { env?: Record<string, string> }).env?.VITE_API_URL) || ""
+).replace(/\/+$/, "");
+
+async function j<T>(path: string): Promise<T> {
+  const url = path.startsWith("http") ? path : `${API_BASE}${path}`;
   const r = await fetch(url);
   if (!r.ok) throw new Error(`${url}: ${r.status}`);
   return r.json();
@@ -76,7 +97,7 @@ async function j<T>(url: string): Promise<T> {
 export const api = {
   batches: () => j<{ batches: BatchInfo[] }>("/api/batches").then((d) => d.batches),
   runBatch: (b: string) =>
-    fetch(`/api/batches/${b}/run`, { method: "POST" }).then((r) => r.json()),
+    fetch(`${API_BASE}/api/batches/${b}/run`, { method: "POST" }).then((r) => r.json()),
   metrics: (b: string) => j<Metrics>(`/api/batches/${b}/metrics`),
   transactions: (b: string, cls: string | null = null, limit = 200) =>
     j<{ items: Txn[] }>(
@@ -86,6 +107,7 @@ export const api = {
     j<{ count: number; exceptions: Txn[] }>(`/api/exceptions?batch_name=${b}`),
   drawer: (workKey: string, b: string) =>
     j<Drawer>(`/api/exceptions/${workKey}/drawer?batch_name=${b}`),
+  evalReport: () => j<{ batches: EvalRow[] }>("/api/batches/eval-report"),
 };
 
 export function streamChat(
@@ -97,7 +119,7 @@ export function streamChat(
   onDone: () => void,
 ): AbortController {
   const ctrl = new AbortController();
-  fetch(`/api/chat/${batch}`, {
+  fetch(`${API_BASE}/api/chat/${batch}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message, session, history, format: "sse" }),
